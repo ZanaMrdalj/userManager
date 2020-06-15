@@ -1,0 +1,15 @@
+{
+  "validParamsForCreateParams": {
+    "userName": "userName",
+    "email": "userName@endava.com",
+    "workingAs": "Intern",
+    "base64image": "data:image/png;base64,iVBOIgCII"
+  },
+  "validResponseForCreateParams": "{\"Bucket\":\"avatarBucket\",\"Key\":\"userName.png\",\"Body\":{\"type\":\"Buffer\",\"data\":[137,80,78,34,0,136]},\"ContentEncoding\":\"base64\",\"ContentType\":\"image/png\"}",
+  "invalidParamsForCreateParams": {
+    "userName": "userName",
+    "email": "userName@endava.com",
+    "workingAs": "Intern",
+    "base64image": "data:image;base64,iVBOIgCIIgCI5CT/6o"
+  }
+}

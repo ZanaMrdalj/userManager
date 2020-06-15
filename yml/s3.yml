@@ -1,0 +1,75 @@
+Resources:
+  AvatarBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: ${self:provider.stackName}-avatar-bucket
+      AccessControl: PublicRead
+      VersioningConfiguration:
+        Status: Suspended
+      CorsConfiguration:
+        CorsRules:
+          - AllowedMethods:
+              - GET
+            AllowedOrigins:
+              - "*"
+            AllowedHeaders:
+              - "*"
+          - AllowedMethods:
+              - POST
+            AllowedOrigins:
+              - "http://*.cloudfront.net"
+              - "https://*.cloudfront.net"
+              - "http://*.amazonaws.com"
+              - "https://*.amazonaws.com"
+            AllowedHeaders:
+              - "*"
+  AvatarBucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref AvatarBucket
+      PolicyDocument:
+        Statement:
+          - Sid: PublicReadForGetAndPutBucketObjects
+            Effect: Allow
+            Principal: "*"
+            Action:
+              - s3:GetObject
+            Resource:
+              - !Join [ "", [ !GetAtt AvatarBucket.Arn, "/*" ]]
+  updateAvatarBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: ${self:service}-${self:provider.stage}-update-avatar
+      AccessControl: PublicRead
+      VersioningConfiguration:
+        Status: Suspended
+      CorsConfiguration:
+        CorsRules:
+          - AllowedMethods:
+              - GET
+            AllowedOrigins:
+              - "*"
+            AllowedHeaders:
+              - "*"
+          - AllowedMethods:
+              - POST
+            AllowedOrigins:
+              - "http://*.cloudfront.net"
+              - "https://*.cloudfront.net"
+              - "http://*.amazonaws.com"
+              - "https://*.amazonaws.com"
+            AllowedHeaders:
+              - "*"
+  updateAvatarBucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref updateAvatarBucket
+      PolicyDocument:
+        Statement:
+          - Sid: PublicReadForGetAndPutBucketObjects
+            Effect: Allow
+            Principal: "*"
+            Action:
+              - s3:GetObject
+            Resource:
+              - !Join [ "", [ !GetAtt updateAvatarBucket.Arn, "/*" ]]

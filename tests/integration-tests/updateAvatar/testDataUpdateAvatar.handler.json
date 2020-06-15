@@ -1,0 +1,92 @@
+{
+  "validEvent": {
+    "Records": [
+      {
+        "eventVersion": "2.1",
+        "eventSource": "aws:s3",
+        "awsRegion": "us-east-2",
+        "eventTime": "2020-05-13T12:52:45.639Z",
+        "eventName": "ObjectCreated:Put",
+        "userIdentity": {
+          "principalId": "AWS:AIDAYZTRLMITK5FB5BMVN"
+        },
+        "requestParameters": {
+          "sourceIPAddress": "87.116.179.100"
+        },
+        "responseElements": {
+          "x-amz-request-id": "E84850A4AF4F860C",
+          "x-amz-id-2": "PF9bgs2dsVWRBotsGUkqCOClHuMhP7DwkLtUS8An3dGtJXbasJ74TlV4e8pQ/1ZcHUiMlBQwYOIGX40XlMC3gVGcp8P/qtq8KWlIvNnhFw4="
+        },
+        "s3": {
+          "s3SchemaVersion": "1.0",
+          "configurationId": "68757f26-b0e4-4328-9ca8-c71bfbdfede4",
+          "bucket": {
+            "name": "fookorpica",
+            "ownerIdentity": {
+              "principalId": "AKODPF0AAJ8MM"
+            },
+            "arn": "arn:aws:s3:::fookorpica"
+          },
+          "object": {
+            "key": "zana.mrdalj%40endava.com/smajli.png",
+            "size": 16974,
+            "eTag": "26f1f9be9939bbfab48cc5798434d875",
+            "sequencer": "005EBBEDA3217FA310"
+          }
+        }
+      }
+    ]
+  },
+  "nonExistingUserEvent": {
+    "Records": [
+      {
+        "eventVersion": "2.1",
+        "eventSource": "aws:s3",
+        "awsRegion": "us-east-2",
+        "eventTime": "2020-05-13T12:52:45.639Z",
+        "eventName": "ObjectCreated:Put",
+        "userIdentity": {
+          "principalId": "AWS:AIDAYZTRLMITK5FB5BMVN"
+        },
+        "requestParameters": {
+          "sourceIPAddress": "87.116.179.100"
+        },
+        "responseElements": {
+          "x-amz-request-id": "E84850A4AF4F860C",
+          "x-amz-id-2": "PF9bgs2dsVWRBotsGUkqCOClHuMhP7DwkLtUS8An3dGtJXbasJ74TlV4e8pQ/1ZcHUiMlBQwYOIGX40XlMC3gVGcp8P/qtq8KWlIvNnhFw4="
+        },
+        "s3": {
+          "s3SchemaVersion": "1.0",
+          "configurationId": "68757f26-b0e4-4328-9ca8-c71bfbdfede4",
+          "bucket": {
+            "name": "fookorpica",
+            "ownerIdentity": {
+              "principalId": "AKODPF0AAJ8MM"
+            },
+            "arn": "arn:aws:s3:::fookorpica"
+          },
+          "object": {
+            "key": "rdalj@endava.com/smajli.png",
+            "size": 16974,
+            "eTag": "26f1f9be9939bbfab48cc5798434d875",
+            "sequencer": "005EBBEDA3217FA310"
+          }
+        }
+      }
+    ]
+  },
+  "paramsForGetMethod" : {
+    "TableName" : "endavans-test-user-table",
+    "Key" : {
+      "email" : "zana.mrdalj@endava.com"
+    }
+  },
+  "getMethodResponse": {
+    "Item": {
+      "email": "zana.mrdalj@endava.com",
+      "userName": "Zana Mrdalj",
+      "workingAs": "Intern",
+      "avatarLink": "https://endavans-dev-update-user.s3-us-east-2.amazonaws.com/zana.mrdalj%40endava.com/smajli.png"
+    }
+  }
+}

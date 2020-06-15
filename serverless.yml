@@ -1,0 +1,207 @@
+service: endavans
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: ${opt:stage, 'dev'}
+  region: ${opt:region, 'us-east-2'}
+  stackName: ${self:service}-${self:provider.stage}
+
+package:
+  exclude:
+    - tests/**
+    - .dynamodb/**
+    - .idea/**
+    - yml/**
+    - README.md
+    - package.json
+    - package-lock.json
+
+plugins:
+  - serverless-iam-roles-per-function
+  - serverless-mocha-plugin
+  - serverless-dynamodb-local
+  - serverless-plugin-existing-s3
+
+functions:
+  updateAvatar:
+    handler: src/lambda/updateAvatar.handler
+    events:
+      - s3:
+          bucket: ${self:service}-${self:provider.stage}-update-avatar
+          events:
+            - s3.ObjectCreated:*
+          rules:
+            - suffix: .png
+          existing: true
+      - s3:
+          bucket: ${self:service}-${self:provider.stage}-update-avatar
+          events:
+            - s3.ObjectCreated:*
+          rules:
+            - suffix: .jpg
+          existing: true
+      - s3:
+          bucket: ${self:service}-${self:provider.stage}-update-avatar
+          events:
+            - s3.ObjectCreated:*
+          rules:
+            - suffix: .jpeg
+          existing: true
+    iamRoleStatements:
+      - Effect: Allow
+        Action:
+          - dynamodb:UpdateItem
+          - dynamodb:GetItem
+        Resource: !GetAtt UsersTable.Arn
+    environment:
+      userTableName: !Ref UsersTable
+      bucketUrl: https://${self:service}-${self:provider.stage}-update-avatar.s3.${self:provider.region}.amazonaws.com/
+  saveUser:
+    handler: src/lambda/saveUser.handler
+    events:
+      - http:
+          path: user
+          method: post
+    iamRoleStatements:
+        - Effect: Allow
+          Action:
+            - dynamodb:UpdateItem
+          Resource: !GetAtt UsersTable.Arn
+        - Effect: Allow
+          Action:
+            - s3:PutObject
+          Resource:
+            - !Join [ "", [ !GetAtt AvatarBucket.Arn, "/*" ]]
+    environment:
+      userTableName: !Ref UsersTable
+      avatarBucketName: !Ref AvatarBucket
+      avatarBucketUrl: https://${self:provider.stackName}-avatar-bucket.s3-${self:provider.region}.amazonaws.com
+  getUser:
+    handler: src/lambda/getUser.handler
+    events:
+      - http:
+          path: user/{email}
+          method: get
+          request:
+            parameters:
+              paths:
+                email: true
+    iamRoleStatements:
+      - Effect: Allow
+        Action:
+          - dynamodb:GetItem
+        Resource: !GetAtt UsersTable.Arn
+    environment:
+      usersTableName: !Ref UsersTable
+  createProject:
+    handler: src/lambda/createProject.handler
+    events:
+      - http:
+          path: project
+          method: post
+    iamRoleStatements:
+      - Effect: Allow
+        Action:
+          - dynamodb:PutItem
+          - dynamodb:DeleteItem
+          - dynamodb:GetItem
+        Resource: !GetAtt projectTable.Arn
+      - Effect: Allow
+        Action:
+          - dynamodb:GetItem
+          - dynamodb:UpdateItem
+          - dynamodb:PutItem
+        Resource: !GetAtt UsersTable.Arn
+    environment:
+        projectTableName: !Ref projectTable
+        usersTableName: !Ref UsersTable
+  getProject:
+    handler: src/lambda/getProject.handler
+    events:
+      - http:
+          path: project/{projectNumber}
+          method: get
+          request:
+            parameters:
+              paths:
+                projectNumber: true
+    iamRoleStatements:
+      - Effect: Allow
+        Action:
+          - dynamodb:GetItem
+        Resource: !GetAtt projectTable.Arn
+    environment:
+      projectTableName: !Ref projectTable
+  deleteProject:
+    handler: src/lambda/deleteProject.handler
+    events:
+      - http:
+          path: project/{projectNumber}
+          method: delete
+    iamRoleStatements:
+      - Effect: Allow
+        Action:
+          - dynamodb:GetItem
+          - dynamodb:DeleteItem
+        Resource: !GetAtt projectTable.Arn
+      - Effect: Allow
+        Action:
+        - dynamodb:UpdateItem
+        Resource: !GetAtt UsersTable.Arn
+    environment:
+      projectTableName: !Ref projectTable
+      usersTableName: !Ref UsersTable
+  userNotification:
+    handler: src/lambda/userNotification.handler
+    events:
+      - stream:
+          type: dynamodb
+          batchSize: 1
+          startingPosition: LATEST
+          arn:
+            Fn::GetAtt:
+              - projectTable
+              - StreamArn
+    iamRoleStatements:
+      - Effect: Allow
+        Action:
+          - ses:SendEmail
+        Resource: !Join ["", [ "arn:aws:ses", ":", !FindInMap [ SourceEmails, "${self:provider.stage}" , region ], ":", !Ref "AWS::AccountId", ":identity/", !FindInMap [ SourceEmails, "${self:provider.stage}" , email ] ]]
+    environment:
+      senderEmail: !FindInMap [ SourceEmails, "${self:provider.stage}" , email ]
+
+resources:
+  - ${file(yml/dynamodb-table.yml)}
+  - ${file(yml/s3.yml)}
+  - Mappings:
+      SourceEmails:
+        dev:
+          region: us-east-1
+          email: zana.mrdalj@endava.com
+        prod:
+          region: us-east-1
+          email: zanamrdalj@yahoo.com
+
+custom:
+  dynamodb:
+    stages:
+      - test
+      - dev
+    start:
+      port: 8000
+      inMemory: true
+      migrate: true
+      seed: true
+
+    seed:
+      test:
+        sources:
+          - table: endavans-test-user-table
+            sources: [./tests/dynamo-db-data/endavans-test-user-table.json]
+          - table: endavans-test-project-table
+            sources: [./tests/dynamo-db-data/endavans-test-project-table.json]
+
+layers:
+  imageMagic:
+      path: layers/image-magick

@@ -1,0 +1,47 @@
+[
+  {
+    "projectNumber": 1,
+    "projectName": "firstProject",
+    "clientName": "firstClient",
+    "teamMembers": [
+      {"email": "zanamrdalj@endava.com", "position": "Intern"},
+      {"email": "filip.milanko@endava.com", "position": "Senior Developer"}
+    ]
+  },
+  {
+    "projectNumber": 2,
+    "projectName": "secondProject",
+    "clientName": "secondClient",
+    "teamMembers": [
+      {"email": "zanamrdalj@endava.com", "position": "Intern"},
+      {"email": "filip.milanko@endava.com", "position": "Senior Developer"}
+    ]
+  },
+  {
+    "projectNumber": 3,
+    "projectName": "thirdProject",
+    "clientName": "thirdClient",
+    "teamMembers": [
+      {"email": "zanamrdalj@endava.com", "position": "Intern"},
+      {"email": "test.user@endava.com", "position": "Intern"}
+    ]
+  },
+  {
+    "projectNumber": 4,
+    "projectName": "fourthProject",
+    "clientName": "fourthClient",
+    "teamMembers": [
+      {"email": "zanamrdalj@endava.com", "position": "Intern"},
+      {"email": "filip.milanko@endava.com", "position": "Senior Developer"}
+    ]
+  },
+  {
+    "projectNumber": 8,
+    "projectName": "projectForDelete",
+    "clientName": "testClient",
+    "teamMembers": [
+      {"email": "zanamrdalj@endava.com", "position": "Intern"},
+      {"email": "filip.milanko@endava.com", "position": "Senior Developer"}
+    ]
+  }
+]

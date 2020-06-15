@@ -1,0 +1,33 @@
+{
+  "name": "endavans",
+  "version": "1.0.0",
+  "description": "This is a small practice project to enter new user data in the database using AWS Lambda, \r DynamoDB, CloudFormation and serverless framework.",
+  "dependencies": {
+    "serverless-dynamodb-client": "0.0.2",
+    "serverless-dynamodb-local": "^0.2.39",
+    "serverless-plugin-existing-s3": "^2.4.0"
+  },
+  "devDependencies": {
+    "aws-sdk": "^2.646.0",
+    "aws-sdk-mock": "^5.1.0",
+    "chai": "^4.2.0",
+    "mocha": "*",
+    "serverless": "^1.71.3",
+    "serverless-iam-roles-per-function": "^2.0.2",
+    "serverless-mocha-plugin": "^1.12.0"
+  },
+  "scripts": {
+    "tests:unit": "sls invoke test --path tests/unit-tests",
+    "startDynamoDbLocal": "sls dynamodb install && npx kill-port 8000 && sls dynamodb start --port 8000 --stage test --seed test --region localhost",
+    "tests:integration-windows": "npm run startDynamoDbLocal & timeout 30 && set IS_OFFLINE=true && sls invoke test --stage test --region localhost --path tests/integration-tests",
+    "tests:integration": "npm run startDynamoDbLocal & sleep 30 && IS_OFFLINE=true sls invoke test --stage test --region localhost --path tests/integration-tests && npx kill-port 8000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://ZanaMrdalj@bitbucket.org/ZanaMrdalj/praksa-2020.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/ZanaMrdalj/praksa-2020#readme"
+}

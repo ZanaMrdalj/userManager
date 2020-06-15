@@ -1,0 +1,2341 @@
+{
+  "validEvent28Items": {
+    "resource": "/project",
+    "path": "/project",
+    "httpMethod": "POST",
+    "headers": {
+      "Accept": "*/*",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Cache-Control": "no-cache",
+      "CloudFront-Forwarded-Proto": "https",
+      "CloudFront-Is-Desktop-Viewer": "true",
+      "CloudFront-Is-Mobile-Viewer": "false",
+      "CloudFront-Is-SmartTV-Viewer": "false",
+      "CloudFront-Is-Tablet-Viewer": "false",
+      "CloudFront-Viewer-Country": "RS",
+      "Content-Type": "application/json",
+      "Host": "6o1str51jg.execute-api.us-east-2.amazonaws.com",
+      "Postman-Token": "2b08f42f-a629-4d57-b960-9b88adee065a",
+      "User-Agent": "PostmanRuntime/7.25.0",
+      "Via": "1.1 93f2a781416975f99355acc4c81d60d2.cloudfront.net (CloudFront)",
+      "X-Amz-Cf-Id": "8KKbLIoaYCW6Owby2cgBtnzZcXbi4Jzljrr6pdIt44uEDmVDrgYZ0g==",
+      "X-Amzn-Trace-Id": "Root=1-5ed4d854-a76ff1b0d092842023e05dc0",
+      "X-Forwarded-For": "87.116.177.49, 130.176.13.96",
+      "X-Forwarded-Port": "443",
+      "X-Forwarded-Proto": "https"
+    },
+    "multiValueHeaders": {
+      "Accept": [
+        "*/*"
+      ],
+      "Accept-Encoding": [
+        "gzip, deflate, br"
+      ],
+      "Cache-Control": [
+        "no-cache"
+      ],
+      "CloudFront-Forwarded-Proto": [
+        "https"
+      ],
+      "CloudFront-Is-Desktop-Viewer": [
+        "true"
+      ],
+      "CloudFront-Is-Mobile-Viewer": [
+        "false"
+      ],
+      "CloudFront-Is-SmartTV-Viewer": [
+        "false"
+      ],
+      "CloudFront-Is-Tablet-Viewer": [
+        "false"
+      ],
+      "CloudFront-Viewer-Country": [
+        "RS"
+      ],
+      "Content-Type": [
+        "application/json"
+      ],
+      "Host": [
+        "6o1str51jg.execute-api.us-east-2.amazonaws.com"
+      ],
+      "Postman-Token": [
+        "2b08f42f-a629-4d57-b960-9b88adee065a"
+      ],
+      "User-Agent": [
+        "PostmanRuntime/7.25.0"
+      ],
+      "Via": [
+        "1.1 93f2a781416975f99355acc4c81d60d2.cloudfront.net (CloudFront)"
+      ],
+      "X-Amz-Cf-Id": [
+        "8KKbLIoaYCW6Owby2cgBtnzZcXbi4Jzljrr6pdIt44uEDmVDrgYZ0g=="
+      ],
+      "X-Amzn-Trace-Id": [
+        "Root=1-5ed4d854-a76ff1b0d092842023e05dc0"
+      ],
+      "X-Forwarded-For": [
+        "87.116.177.49, 130.176.13.96"
+      ],
+      "X-Forwarded-Port": [
+        "443"
+      ],
+      "X-Forwarded-Proto": [
+        "https"
+      ]
+    },
+    "queryStringParameters": null,
+    "multiValueQueryStringParameters": null,
+    "pathParameters": null,
+    "stageVariables": null,
+    "requestContext": {
+      "resourceId": "oilg74",
+      "resourcePath": "/project",
+      "httpMethod": "POST",
+      "extendedRequestId": "Nca9RGFpiYcFmWQ=",
+      "requestTime": "01/Jun/2020:10:28:36 +0000",
+      "path": "/dev/project",
+      "accountId": "604754371110",
+      "protocol": "HTTP/1.1",
+      "stage": "dev",
+      "domainPrefix": "6o1str51jg",
+      "requestTimeEpoch": 1591007316857,
+      "requestId": "5db22063-b55e-46a0-8029-e7335c928aab",
+      "identity": {
+        "cognitoIdentityPoolId": null,
+        "accountId": null,
+        "cognitoIdentityId": null,
+        "caller": null,
+        "sourceIp": "87.116.177.49",
+        "principalOrgId": null,
+        "accessKey": null,
+        "cognitoAuthenticationType": null,
+        "cognitoAuthenticationProvider": null,
+        "userArn": null,
+        "userAgent": "PostmanRuntime/7.25.0",
+        "user": null
+      },
+      "domainName": "6o1str51jg.execute-api.us-east-2.amazonaws.com",
+      "apiId": "6o1str51jg"
+    },
+    "body": "{\n\t\"projectName\": \"Project\",\n\t\"projectNumber\": 999991,\n\t\"clientName\": \"twoTables\",\n\t\"teamMembers\" : [\n\t\t{\n\t\t\t\"email\": \"filip.milanko@endava.com\",\n\t\t\t\"position\": \"Senior Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"dragantosic@endava.com\",\n\t\t\t\"position\": \"Project Manager\"\n\t\t},\n\t\t{\t\t\t\"email\": \"vlada.sivacki@endava.com\",\t\t\t\"position\": \"Head Of Development\"\t\t},\n\t\t{\n\t\t\t\"email\" : \"tijana.andric@endava.com\",\n\t\t\t\"position\" : \"UX Design\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"Nevena@endava.com\",\n\t\t\t\"position\": \"Human Resources\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"anjaradenkovic@endava.com\",\n\t\t\t\"position\": \"Junior QA\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"newUser@endava.com\",\n\t\t\t\"position\": \"Senior Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"jovanatodorov@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user1@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user2@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user3@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user4@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user5@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user6@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user7@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user8@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user9@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user10@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user11@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user12@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user13@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user14@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user15@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user16@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user17@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user18@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t}\n\t\t]\n}",
+    "isBase64Encoded": false
+  },
+  "validEvent": {
+    "resource": "/project",
+    "path": "/project",
+    "httpMethod": "POST",
+    "headers": {
+      "Accept": "*/*",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Cache-Control": "no-cache",
+      "CloudFront-Forwarded-Proto": "https",
+      "CloudFront-Is-Desktop-Viewer": "true",
+      "CloudFront-Is-Mobile-Viewer": "false",
+      "CloudFront-Is-SmartTV-Viewer": "false",
+      "CloudFront-Is-Tablet-Viewer": "false",
+      "CloudFront-Viewer-Country": "RS",
+      "Content-Type": "application/json",
+      "Host": "6o1str51jg.execute-api.us-east-2.amazonaws.com",
+      "Postman-Token": "2b08f42f-a629-4d57-b960-9b88adee065a",
+      "User-Agent": "PostmanRuntime/7.25.0",
+      "Via": "1.1 93f2a781416975f99355acc4c81d60d2.cloudfront.net (CloudFront)",
+      "X-Amz-Cf-Id": "8KKbLIoaYCW6Owby2cgBtnzZcXbi4Jzljrr6pdIt44uEDmVDrgYZ0g==",
+      "X-Amzn-Trace-Id": "Root=1-5ed4d854-a76ff1b0d092842023e05dc0",
+      "X-Forwarded-For": "87.116.177.49, 130.176.13.96",
+      "X-Forwarded-Port": "443",
+      "X-Forwarded-Proto": "https"
+    },
+    "multiValueHeaders": {
+      "Accept": [
+        "*/*"
+      ],
+      "Accept-Encoding": [
+        "gzip, deflate, br"
+      ],
+      "Cache-Control": [
+        "no-cache"
+      ],
+      "CloudFront-Forwarded-Proto": [
+        "https"
+      ],
+      "CloudFront-Is-Desktop-Viewer": [
+        "true"
+      ],
+      "CloudFront-Is-Mobile-Viewer": [
+        "false"
+      ],
+      "CloudFront-Is-SmartTV-Viewer": [
+        "false"
+      ],
+      "CloudFront-Is-Tablet-Viewer": [
+        "false"
+      ],
+      "CloudFront-Viewer-Country": [
+        "RS"
+      ],
+      "Content-Type": [
+        "application/json"
+      ],
+      "Host": [
+        "6o1str51jg.execute-api.us-east-2.amazonaws.com"
+      ],
+      "Postman-Token": [
+        "2b08f42f-a629-4d57-b960-9b88adee065a"
+      ],
+      "User-Agent": [
+        "PostmanRuntime/7.25.0"
+      ],
+      "Via": [
+        "1.1 93f2a781416975f99355acc4c81d60d2.cloudfront.net (CloudFront)"
+      ],
+      "X-Amz-Cf-Id": [
+        "8KKbLIoaYCW6Owby2cgBtnzZcXbi4Jzljrr6pdIt44uEDmVDrgYZ0g=="
+      ],
+      "X-Amzn-Trace-Id": [
+        "Root=1-5ed4d854-a76ff1b0d092842023e05dc0"
+      ],
+      "X-Forwarded-For": [
+        "87.116.177.49, 130.176.13.96"
+      ],
+      "X-Forwarded-Port": [
+        "443"
+      ],
+      "X-Forwarded-Proto": [
+        "https"
+      ]
+    },
+    "queryStringParameters": null,
+    "multiValueQueryStringParameters": null,
+    "pathParameters": null,
+    "stageVariables": null,
+    "requestContext": {
+      "resourceId": "oilg74",
+      "resourcePath": "/project",
+      "httpMethod": "POST",
+      "extendedRequestId": "Nca9RGFpiYcFmWQ=",
+      "requestTime": "01/Jun/2020:10:28:36 +0000",
+      "path": "/dev/project",
+      "accountId": "604754371110",
+      "protocol": "HTTP/1.1",
+      "stage": "dev",
+      "domainPrefix": "6o1str51jg",
+      "requestTimeEpoch": 1591007316857,
+      "requestId": "5db22063-b55e-46a0-8029-e7335c928aab",
+      "identity": {
+        "cognitoIdentityPoolId": null,
+        "accountId": null,
+        "cognitoIdentityId": null,
+        "caller": null,
+        "sourceIp": "87.116.177.49",
+        "principalOrgId": null,
+        "accessKey": null,
+        "cognitoAuthenticationType": null,
+        "cognitoAuthenticationProvider": null,
+        "userArn": null,
+        "userAgent": "PostmanRuntime/7.25.0",
+        "user": null
+      },
+      "domainName": "6o1str51jg.execute-api.us-east-2.amazonaws.com",
+      "apiId": "6o1str51jg"
+    },
+    "body": "{\n\t\"projectName\": \"Project\",\n\t\"projectNumber\": 999991,\n\t\"clientName\": \"twoTables\",\n\t\"teamMembers\" : [\n\t\t{\n\t\t\t\"email\": \"filip.milanko@endava.com\",\n\t\t\t\"position\": \"Senior Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"dragantosic@endava.com\",\n\t\t\t\"position\": \"Project Manager\"\n\t\t},\n\t\t{\t\t\t\"email\": \"vlada.sivacki@endava.com\",\t\t\t\"position\": \"Head Of Development\"\t\t},\n\t\t{\n\t\t\t\"email\" : \"tijana.andric@endava.com\",\n\t\t\t\"position\" : \"UX Design\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"Nevena@endava.com\",\n\t\t\t\"position\": \"Human Resources\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"anjaradenkovic@endava.com\",\n\t\t\t\"position\": \"Junior QA\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"newUser@endava.com\",\n\t\t\t\"position\": \"Senior Developer\"\n\t\t}]\n}",
+    "isBase64Encoded": false
+  },
+  "validEventResponse": {
+    "statusCode":  200,
+    "headers": {
+      "Access-Control-Allow-Origin" : "*",
+      "Access-Control-Allow-Credentials" : true,
+      "Content-Type" : "application/json",
+      "Cache-Control": "no-store"
+    },
+    "body": "Successfully created project data!"
+  },
+  "eventTriggersRevert": {
+    "resource": "/project",
+    "path": "/project",
+    "httpMethod": "POST",
+    "headers": {
+      "Accept": "*/*",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Cache-Control": "no-cache",
+      "CloudFront-Forwarded-Proto": "https",
+      "CloudFront-Is-Desktop-Viewer": "true",
+      "CloudFront-Is-Mobile-Viewer": "false",
+      "CloudFront-Is-SmartTV-Viewer": "false",
+      "CloudFront-Is-Tablet-Viewer": "false",
+      "CloudFront-Viewer-Country": "RS",
+      "Content-Type": "application/json",
+      "Host": "6o1str51jg.execute-api.us-east-2.amazonaws.com",
+      "Postman-Token": "6958294a-e70f-4833-88fa-5f07b20c179e",
+      "User-Agent": "PostmanRuntime/7.25.0",
+      "Via": "1.1 f1a23d3ef0f9fd221ae2e300de878916.cloudfront.net (CloudFront)",
+      "X-Amz-Cf-Id": "zaS5-yfDevMA4tlRDPwsl62VZZ2UTBVQF4dU_ZWwIdfiwHcF46Qpog==",
+      "X-Amzn-Trace-Id": "Root=1-5ed4da7d-b14582bc6c036e2a144eeb54",
+      "X-Forwarded-For": "87.116.177.49, 130.176.13.140",
+      "X-Forwarded-Port": "443",
+      "X-Forwarded-Proto": "https"
+    },
+    "multiValueHeaders": {
+      "Accept": [
+        "*/*"
+      ],
+      "Accept-Encoding": [
+        "gzip, deflate, br"
+      ],
+      "Cache-Control": [
+        "no-cache"
+      ],
+      "CloudFront-Forwarded-Proto": [
+        "https"
+      ],
+      "CloudFront-Is-Desktop-Viewer": [
+        "true"
+      ],
+      "CloudFront-Is-Mobile-Viewer": [
+        "false"
+      ],
+      "CloudFront-Is-SmartTV-Viewer": [
+        "false"
+      ],
+      "CloudFront-Is-Tablet-Viewer": [
+        "false"
+      ],
+      "CloudFront-Viewer-Country": [
+        "RS"
+      ],
+      "Content-Type": [
+        "application/json"
+      ],
+      "Host": [
+        "6o1str51jg.execute-api.us-east-2.amazonaws.com"
+      ],
+      "Postman-Token": [
+        "6958294a-e70f-4833-88fa-5f07b20c179e"
+      ],
+      "User-Agent": [
+        "PostmanRuntime/7.25.0"
+      ],
+      "Via": [
+        "1.1 f1a23d3ef0f9fd221ae2e300de878916.cloudfront.net (CloudFront)"
+      ],
+      "X-Amz-Cf-Id": [
+        "zaS5-yfDevMA4tlRDPwsl62VZZ2UTBVQF4dU_ZWwIdfiwHcF46Qpog=="
+      ],
+      "X-Amzn-Trace-Id": [
+        "Root=1-5ed4da7d-b14582bc6c036e2a144eeb54"
+      ],
+      "X-Forwarded-For": [
+        "87.116.177.49, 130.176.13.140"
+      ],
+      "X-Forwarded-Port": [
+        "443"
+      ],
+      "X-Forwarded-Proto": [
+        "https"
+      ]
+    },
+    "queryStringParameters": null,
+    "multiValueQueryStringParameters": null,
+    "pathParameters": null,
+    "stageVariables": null,
+    "requestContext": {
+      "resourceId": "oilg74",
+      "resourcePath": "/project",
+      "httpMethod": "POST",
+      "extendedRequestId": "NccTnGndCYcFZWg=",
+      "requestTime": "01/Jun/2020:10:37:49 +0000",
+      "path": "/dev/project",
+      "accountId": "604754371110",
+      "protocol": "HTTP/1.1",
+      "stage": "dev",
+      "domainPrefix": "6o1str51jg",
+      "requestTimeEpoch": 1591007869459,
+      "requestId": "a71d689d-e08e-451a-87fc-44c7726ac883",
+      "identity": {
+        "cognitoIdentityPoolId": null,
+        "accountId": null,
+        "cognitoIdentityId": null,
+        "caller": null,
+        "sourceIp": "87.116.177.49",
+        "principalOrgId": null,
+        "accessKey": null,
+        "cognitoAuthenticationType": null,
+        "cognitoAuthenticationProvider": null,
+        "userArn": null,
+        "userAgent": "PostmanRuntime/7.25.0",
+        "user": null
+      },
+      "domainName": "6o1str51jg.execute-api.us-east-2.amazonaws.com",
+      "apiId": "6o1str51jg"
+    },
+    "body": "{\n\t\"projectName\": \"Project\",\n\t\"projectNumber\": 15,\n\t\"clientName\": \"twoTables\",\n\t\"teamMembers\" : [\n\t\t{\n\t\t\t\"email\": \"filip.milanko@endava.com\",\n\t\t\t\"position\": \"Senior Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"dragantosic@endava.com\",\n\t\t\t\"position\": \"Project Manager\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"vlada.sivacki@endava.com\",\n\t\t\t\"position\": \"Head Of Development\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"tijana.andric@endava.com\",\n\t\t\t\"position\" : \"UX Design\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"Nevena@endava.com\",\n\t\t\t\"position\": \"Human Resources\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"anjaradenkovic@endava.com\",\n\t\t\t\"position\": \"Junior QA\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"newUser@endava.com\",\n\t\t\t\"position\": \"Senior Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"jovanatodorov@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user1@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user2@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user3@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user4@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user5@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user6@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user7@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user8@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user9@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user10@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user11@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user12@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user13@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user14@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user15@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user16@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user17@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user18@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user19@endava.com\",\n\t\t\t\"position\" : \"Senior Developer\"\n\t\t}\n\t\t]\n}",
+    "isBase64Encoded": false
+  },
+  "eventTriggersRevertResponse": "Successfully reverted data!",
+  "eventFirstTransactionFails":  {
+    "resource": "/project",
+    "path": "/project",
+    "httpMethod": "POST",
+    "headers": {
+      "Accept": "*/*",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Cache-Control": "no-cache",
+      "CloudFront-Forwarded-Proto": "https",
+      "CloudFront-Is-Desktop-Viewer": "true",
+      "CloudFront-Is-Mobile-Viewer": "false",
+      "CloudFront-Is-SmartTV-Viewer": "false",
+      "CloudFront-Is-Tablet-Viewer": "false",
+      "CloudFront-Viewer-Country": "RS",
+      "Content-Type": "application/json",
+      "Host": "6o1str51jg.execute-api.us-east-2.amazonaws.com",
+      "Postman-Token": "6958294a-e70f-4833-88fa-5f07b20c179e",
+      "User-Agent": "PostmanRuntime/7.25.0",
+      "Via": "1.1 f1a23d3ef0f9fd221ae2e300de878916.cloudfront.net (CloudFront)",
+      "X-Amz-Cf-Id": "zaS5-yfDevMA4tlRDPwsl62VZZ2UTBVQF4dU_ZWwIdfiwHcF46Qpog==",
+      "X-Amzn-Trace-Id": "Root=1-5ed4da7d-b14582bc6c036e2a144eeb54",
+      "X-Forwarded-For": "87.116.177.49, 130.176.13.140",
+      "X-Forwarded-Port": "443",
+      "X-Forwarded-Proto": "https"
+    },
+    "multiValueHeaders": {
+      "Accept": [
+        "*/*"
+      ],
+      "Accept-Encoding": [
+        "gzip, deflate, br"
+      ],
+      "Cache-Control": [
+        "no-cache"
+      ],
+      "CloudFront-Forwarded-Proto": [
+        "https"
+      ],
+      "CloudFront-Is-Desktop-Viewer": [
+        "true"
+      ],
+      "CloudFront-Is-Mobile-Viewer": [
+        "false"
+      ],
+      "CloudFront-Is-SmartTV-Viewer": [
+        "false"
+      ],
+      "CloudFront-Is-Tablet-Viewer": [
+        "false"
+      ],
+      "CloudFront-Viewer-Country": [
+        "RS"
+      ],
+      "Content-Type": [
+        "application/json"
+      ],
+      "Host": [
+        "6o1str51jg.execute-api.us-east-2.amazonaws.com"
+      ],
+      "Postman-Token": [
+        "6958294a-e70f-4833-88fa-5f07b20c179e"
+      ],
+      "User-Agent": [
+        "PostmanRuntime/7.25.0"
+      ],
+      "Via": [
+        "1.1 f1a23d3ef0f9fd221ae2e300de878916.cloudfront.net (CloudFront)"
+      ],
+      "X-Amz-Cf-Id": [
+        "zaS5-yfDevMA4tlRDPwsl62VZZ2UTBVQF4dU_ZWwIdfiwHcF46Qpog=="
+      ],
+      "X-Amzn-Trace-Id": [
+        "Root=1-5ed4da7d-b14582bc6c036e2a144eeb54"
+      ],
+      "X-Forwarded-For": [
+        "87.116.177.49, 130.176.13.140"
+      ],
+      "X-Forwarded-Port": [
+        "443"
+      ],
+      "X-Forwarded-Proto": [
+        "https"
+      ]
+    },
+    "queryStringParameters": null,
+    "multiValueQueryStringParameters": null,
+    "pathParameters": null,
+    "stageVariables": null,
+    "requestContext": {
+      "resourceId": "oilg74",
+      "resourcePath": "/project",
+      "httpMethod": "POST",
+      "extendedRequestId": "NccTnGndCYcFZWg=",
+      "requestTime": "01/Jun/2020:10:37:49 +0000",
+      "path": "/dev/project",
+      "accountId": "604754371110",
+      "protocol": "HTTP/1.1",
+      "stage": "dev",
+      "domainPrefix": "6o1str51jg",
+      "requestTimeEpoch": 1591007869459,
+      "requestId": "a71d689d-e08e-451a-87fc-44c7726ac883",
+      "identity": {
+        "cognitoIdentityPoolId": null,
+        "accountId": null,
+        "cognitoIdentityId": null,
+        "caller": null,
+        "sourceIp": "87.116.177.49",
+        "principalOrgId": null,
+        "accessKey": null,
+        "cognitoAuthenticationType": null,
+        "cognitoAuthenticationProvider": null,
+        "userArn": null,
+        "userAgent": "PostmanRuntime/7.25.0",
+        "user": null
+      },
+      "domainName": "6o1str51jg.execute-api.us-east-2.amazonaws.com",
+      "apiId": "6o1str51jg"
+    },
+    "body": "{\n\t\"projectName\": \"Project\",\n\t\"projectNumber\": 15,\n\t\"clientName\": \"twoTables\",\n\t\"teamMembers\" : [\n\t\t{\n\t\t\t\"email\": \"filip.milanko@endava.com\",\n\t\t\t\"position\": \"Intern\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"dragantosic@endava.com\",\n\t\t\t\"position\": \"Project Manager\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"vlada.sivacki@endava.com\",\n\t\t\t\"position\": \"Head Of Development\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"tijana.andric@endava.com\",\n\t\t\t\"position\" : \"UX Design\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"Nevena@endava.com\",\n\t\t\t\"position\": \"Human Resources\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"anjaradenkovic@endava.com\",\n\t\t\t\"position\": \"Junior QA\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"newUser@endava.com\",\n\t\t\t\"position\": \"Senior Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"jovanatodorov@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user1@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user2@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user3@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user4@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user5@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user6@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user7@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user8@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user9@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user10@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user11@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user12@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user13@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user14@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user15@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user16@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user17@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user18@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user19@endava.com\",\n\t\t\t\"position\" : \"Senior Developer\"\n\t\t}\n\t\t]\n}",
+    "isBase64Encoded": false
+  },
+  "firstTransactionFailsResponse": {
+    "body": "Server error!",
+    "headers": {
+      "Access-Control-Allow-Credentials": true,
+      "Access-Control-Allow-Origin": "*",
+      "Cache-Control": "no-store",
+      "Content-Type": "application/json"
+    },
+    "statusCode": 500
+  },
+  "invalidJson": {
+    "resource": "/project",
+    "path": "/project",
+    "httpMethod": "POST",
+    "headers": {
+      "Accept": "*/*",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Cache-Control": "no-cache",
+      "CloudFront-Forwarded-Proto": "https",
+      "CloudFront-Is-Desktop-Viewer": "true",
+      "CloudFront-Is-Mobile-Viewer": "false",
+      "CloudFront-Is-SmartTV-Viewer": "false",
+      "CloudFront-Is-Tablet-Viewer": "false",
+      "CloudFront-Viewer-Country": "RS",
+      "Content-Type": "application/json",
+      "Host": "6o1str51jg.execute-api.us-east-2.amazonaws.com",
+      "Postman-Token": "2b08f42f-a629-4d57-b960-9b88adee065a",
+      "User-Agent": "PostmanRuntime/7.25.0",
+      "Via": "1.1 93f2a781416975f99355acc4c81d60d2.cloudfront.net (CloudFront)",
+      "X-Amz-Cf-Id": "8KKbLIoaYCW6Owby2cgBtnzZcXbi4Jzljrr6pdIt44uEDmVDrgYZ0g==",
+      "X-Amzn-Trace-Id": "Root=1-5ed4d854-a76ff1b0d092842023e05dc0",
+      "X-Forwarded-For": "87.116.177.49, 130.176.13.96",
+      "X-Forwarded-Port": "443",
+      "X-Forwarded-Proto": "https"
+    },
+    "multiValueHeaders": {
+      "Accept": [
+        "*/*"
+      ],
+      "Accept-Encoding": [
+        "gzip, deflate, br"
+      ],
+      "Cache-Control": [
+        "no-cache"
+      ],
+      "CloudFront-Forwarded-Proto": [
+        "https"
+      ],
+      "CloudFront-Is-Desktop-Viewer": [
+        "true"
+      ],
+      "CloudFront-Is-Mobile-Viewer": [
+        "false"
+      ],
+      "CloudFront-Is-SmartTV-Viewer": [
+        "false"
+      ],
+      "CloudFront-Is-Tablet-Viewer": [
+        "false"
+      ],
+      "CloudFront-Viewer-Country": [
+        "RS"
+      ],
+      "Content-Type": [
+        "application/json"
+      ],
+      "Host": [
+        "6o1str51jg.execute-api.us-east-2.amazonaws.com"
+      ],
+      "Postman-Token": [
+        "2b08f42f-a629-4d57-b960-9b88adee065a"
+      ],
+      "User-Agent": [
+        "PostmanRuntime/7.25.0"
+      ],
+      "Via": [
+        "1.1 93f2a781416975f99355acc4c81d60d2.cloudfront.net (CloudFront)"
+      ],
+      "X-Amz-Cf-Id": [
+        "8KKbLIoaYCW6Owby2cgBtnzZcXbi4Jzljrr6pdIt44uEDmVDrgYZ0g=="
+      ],
+      "X-Amzn-Trace-Id": [
+        "Root=1-5ed4d854-a76ff1b0d092842023e05dc0"
+      ],
+      "X-Forwarded-For": [
+        "87.116.177.49, 130.176.13.96"
+      ],
+      "X-Forwarded-Port": [
+        "443"
+      ],
+      "X-Forwarded-Proto": [
+        "https"
+      ]
+    },
+    "queryStringParameters": null,
+    "multiValueQueryStringParameters": null,
+    "pathParameters": null,
+    "stageVariables": null,
+    "requestContext": {
+      "resourceId": "oilg74",
+      "resourcePath": "/project",
+      "httpMethod": "POST",
+      "extendedRequestId": "Nca9RGFpiYcFmWQ=",
+      "requestTime": "01/Jun/2020:10:28:36 +0000",
+      "path": "/dev/project",
+      "accountId": "604754371110",
+      "protocol": "HTTP/1.1",
+      "stage": "dev",
+      "domainPrefix": "6o1str51jg",
+      "requestTimeEpoch": 1591007316857,
+      "requestId": "5db22063-b55e-46a0-8029-e7335c928aab",
+      "identity": {
+        "cognitoIdentityPoolId": null,
+        "accountId": null,
+        "cognitoIdentityId": null,
+        "caller": null,
+        "sourceIp": "87.116.177.49",
+        "principalOrgId": null,
+        "accessKey": null,
+        "cognitoAuthenticationType": null,
+        "cognitoAuthenticationProvider": null,
+        "userArn": null,
+        "userAgent": "PostmanRuntime/7.25.0",
+        "user": null
+      },
+      "domainName": "6o1str51jg.execute-api.us-east-2.amazonaws.com",
+      "apiId": "6o1str51jg"
+    },
+    "body": "\n\t\"projectName\": \"testProject\",\n\t\"projectNumber\": 111111,\n\t\"clientName\": \"twoTables\",\n\t\"teamMembers\" : [\n\t\t{\n\t\t\t\"email\": \"filip.milanko@endava.com\",\n\t\t\t\"position\": \"Senior Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"dragantosic@endava.com\",\n\t\t\t\"position\": \"Project Manager\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"vlada.sivacki@endava.com\",\n\t\t\t\"position\": \"Head Of Development\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"tijana.andric@endava.com\",\n\t\t\t\"position\" : \"UX Design\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"Nevena@endava.com\",\n\t\t\t\"position\": \"Human Resources\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"anjaradenkovic@endava.com\",\n\t\t\t\"position\": \"Junior QA\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"newUser@endava.com\",\n\t\t\t\"position\": \"Senior Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"jovanatodorov@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user1@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user2@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user3@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user4@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user5@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user6@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user7@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user8@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user9@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user10@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user11@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user12@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user13@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user14@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user15@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user16@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user17@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user18@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user19@endava.com\",\n\t\t\t\"position\" : \"Senior\"\n\t\t}\n\t\t]\n}",
+    "isBase64Encoded": false
+  },
+  "invalidJsonResponse": {
+    "statusCode":  400,
+    "headers": {
+      "Access-Control-Allow-Origin" : "*",
+      "Access-Control-Allow-Credentials" : true,
+      "Content-Type" : "application/json",
+      "Cache-Control": "no-store"
+    },
+    "body": "Invalid body!"
+  },
+  "invalidPosition": {
+    "resource": "/project",
+    "path": "/project",
+    "httpMethod": "POST",
+    "headers": {
+      "Accept": "*/*",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Cache-Control": "no-cache",
+      "CloudFront-Forwarded-Proto": "https",
+      "CloudFront-Is-Desktop-Viewer": "true",
+      "CloudFront-Is-Mobile-Viewer": "false",
+      "CloudFront-Is-SmartTV-Viewer": "false",
+      "CloudFront-Is-Tablet-Viewer": "false",
+      "CloudFront-Viewer-Country": "RS",
+      "Content-Type": "application/json",
+      "Host": "6o1str51jg.execute-api.us-east-2.amazonaws.com",
+      "Postman-Token": "2b08f42f-a629-4d57-b960-9b88adee065a",
+      "User-Agent": "PostmanRuntime/7.25.0",
+      "Via": "1.1 93f2a781416975f99355acc4c81d60d2.cloudfront.net (CloudFront)",
+      "X-Amz-Cf-Id": "8KKbLIoaYCW6Owby2cgBtnzZcXbi4Jzljrr6pdIt44uEDmVDrgYZ0g==",
+      "X-Amzn-Trace-Id": "Root=1-5ed4d854-a76ff1b0d092842023e05dc0",
+      "X-Forwarded-For": "87.116.177.49, 130.176.13.96",
+      "X-Forwarded-Port": "443",
+      "X-Forwarded-Proto": "https"
+    },
+    "multiValueHeaders": {
+      "Accept": [
+        "*/*"
+      ],
+      "Accept-Encoding": [
+        "gzip, deflate, br"
+      ],
+      "Cache-Control": [
+        "no-cache"
+      ],
+      "CloudFront-Forwarded-Proto": [
+        "https"
+      ],
+      "CloudFront-Is-Desktop-Viewer": [
+        "true"
+      ],
+      "CloudFront-Is-Mobile-Viewer": [
+        "false"
+      ],
+      "CloudFront-Is-SmartTV-Viewer": [
+        "false"
+      ],
+      "CloudFront-Is-Tablet-Viewer": [
+        "false"
+      ],
+      "CloudFront-Viewer-Country": [
+        "RS"
+      ],
+      "Content-Type": [
+        "application/json"
+      ],
+      "Host": [
+        "6o1str51jg.execute-api.us-east-2.amazonaws.com"
+      ],
+      "Postman-Token": [
+        "2b08f42f-a629-4d57-b960-9b88adee065a"
+      ],
+      "User-Agent": [
+        "PostmanRuntime/7.25.0"
+      ],
+      "Via": [
+        "1.1 93f2a781416975f99355acc4c81d60d2.cloudfront.net (CloudFront)"
+      ],
+      "X-Amz-Cf-Id": [
+        "8KKbLIoaYCW6Owby2cgBtnzZcXbi4Jzljrr6pdIt44uEDmVDrgYZ0g=="
+      ],
+      "X-Amzn-Trace-Id": [
+        "Root=1-5ed4d854-a76ff1b0d092842023e05dc0"
+      ],
+      "X-Forwarded-For": [
+        "87.116.177.49, 130.176.13.96"
+      ],
+      "X-Forwarded-Port": [
+        "443"
+      ],
+      "X-Forwarded-Proto": [
+        "https"
+      ]
+    },
+    "queryStringParameters": null,
+    "multiValueQueryStringParameters": null,
+    "pathParameters": null,
+    "stageVariables": null,
+    "requestContext": {
+      "resourceId": "oilg74",
+      "resourcePath": "/project",
+      "httpMethod": "POST",
+      "extendedRequestId": "Nca9RGFpiYcFmWQ=",
+      "requestTime": "01/Jun/2020:10:28:36 +0000",
+      "path": "/dev/project",
+      "accountId": "604754371110",
+      "protocol": "HTTP/1.1",
+      "stage": "dev",
+      "domainPrefix": "6o1str51jg",
+      "requestTimeEpoch": 1591007316857,
+      "requestId": "5db22063-b55e-46a0-8029-e7335c928aab",
+      "identity": {
+        "cognitoIdentityPoolId": null,
+        "accountId": null,
+        "cognitoIdentityId": null,
+        "caller": null,
+        "sourceIp": "87.116.177.49",
+        "principalOrgId": null,
+        "accessKey": null,
+        "cognitoAuthenticationType": null,
+        "cognitoAuthenticationProvider": null,
+        "userArn": null,
+        "userAgent": "PostmanRuntime/7.25.0",
+        "user": null
+      },
+      "domainName": "6o1str51jg.execute-api.us-east-2.amazonaws.com",
+      "apiId": "6o1str51jg"
+    },
+    "body": "{\n\t\"projectName\": \"testProject\",\n\t\"projectNumber\": 111111,\n\t\"clientName\": \"twoTables\",\n\t\"teamMembers\" : [\n\t\t{\n\t\t\t\"email\": \"filip.milanko@endava.com\",\n\t\t\t\"position\": \"Senior Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"dragantosic@endava.com\",\n\t\t\t\"position\": \"Project Manager\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"vlada.sivacki@endava.com\",\n\t\t\t\"position\": \"Head Of Development\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"tijana.andric@endava.com\",\n\t\t\t\"position\" : \"UX Design\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"Nevena@endava.com\",\n\t\t\t\"position\": \"Human Resources\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"anjaradenkovic@endava.com\",\n\t\t\t\"position\": \"Junior QA\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"newUser@endava.com\",\n\t\t\t\"position\": \"Senior Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"jovanatodorov@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user1@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user2@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user3@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user4@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user5@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user6@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user7@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user8@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user9@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user10@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user11@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user12@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user13@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user14@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user15@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user16@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user17@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user18@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user19@endava.com\",\n\t\t\t\"position\" : \"Senior\"\n\t\t}\n\t\t]\n}",
+    "isBase64Encoded": false
+  },
+  "invalidPositionResponse": {
+    "statusCode":  400,
+    "headers": {
+      "Access-Control-Allow-Origin" : "*",
+      "Access-Control-Allow-Credentials" : true,
+      "Content-Type" : "application/json",
+      "Cache-Control": "no-store"
+    },
+    "body": "Team member position is not valid."
+  },
+  "existingProject": {
+    "resource": "/project",
+    "path": "/project",
+    "httpMethod": "POST",
+    "headers": {
+      "Accept": "*/*",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Cache-Control": "no-cache",
+      "CloudFront-Forwarded-Proto": "https",
+      "CloudFront-Is-Desktop-Viewer": "true",
+      "CloudFront-Is-Mobile-Viewer": "false",
+      "CloudFront-Is-SmartTV-Viewer": "false",
+      "CloudFront-Is-Tablet-Viewer": "false",
+      "CloudFront-Viewer-Country": "RS",
+      "Content-Type": "application/json",
+      "Host": "6o1str51jg.execute-api.us-east-2.amazonaws.com",
+      "Postman-Token": "2b08f42f-a629-4d57-b960-9b88adee065a",
+      "User-Agent": "PostmanRuntime/7.25.0",
+      "Via": "1.1 93f2a781416975f99355acc4c81d60d2.cloudfront.net (CloudFront)",
+      "X-Amz-Cf-Id": "8KKbLIoaYCW6Owby2cgBtnzZcXbi4Jzljrr6pdIt44uEDmVDrgYZ0g==",
+      "X-Amzn-Trace-Id": "Root=1-5ed4d854-a76ff1b0d092842023e05dc0",
+      "X-Forwarded-For": "87.116.177.49, 130.176.13.96",
+      "X-Forwarded-Port": "443",
+      "X-Forwarded-Proto": "https"
+    },
+    "multiValueHeaders": {
+      "Accept": [
+        "*/*"
+      ],
+      "Accept-Encoding": [
+        "gzip, deflate, br"
+      ],
+      "Cache-Control": [
+        "no-cache"
+      ],
+      "CloudFront-Forwarded-Proto": [
+        "https"
+      ],
+      "CloudFront-Is-Desktop-Viewer": [
+        "true"
+      ],
+      "CloudFront-Is-Mobile-Viewer": [
+        "false"
+      ],
+      "CloudFront-Is-SmartTV-Viewer": [
+        "false"
+      ],
+      "CloudFront-Is-Tablet-Viewer": [
+        "false"
+      ],
+      "CloudFront-Viewer-Country": [
+        "RS"
+      ],
+      "Content-Type": [
+        "application/json"
+      ],
+      "Host": [
+        "6o1str51jg.execute-api.us-east-2.amazonaws.com"
+      ],
+      "Postman-Token": [
+        "2b08f42f-a629-4d57-b960-9b88adee065a"
+      ],
+      "User-Agent": [
+        "PostmanRuntime/7.25.0"
+      ],
+      "Via": [
+        "1.1 93f2a781416975f99355acc4c81d60d2.cloudfront.net (CloudFront)"
+      ],
+      "X-Amz-Cf-Id": [
+        "8KKbLIoaYCW6Owby2cgBtnzZcXbi4Jzljrr6pdIt44uEDmVDrgYZ0g=="
+      ],
+      "X-Amzn-Trace-Id": [
+        "Root=1-5ed4d854-a76ff1b0d092842023e05dc0"
+      ],
+      "X-Forwarded-For": [
+        "87.116.177.49, 130.176.13.96"
+      ],
+      "X-Forwarded-Port": [
+        "443"
+      ],
+      "X-Forwarded-Proto": [
+        "https"
+      ]
+    },
+    "queryStringParameters": null,
+    "multiValueQueryStringParameters": null,
+    "pathParameters": null,
+    "stageVariables": null,
+    "requestContext": {
+      "resourceId": "oilg74",
+      "resourcePath": "/project",
+      "httpMethod": "POST",
+      "extendedRequestId": "Nca9RGFpiYcFmWQ=",
+      "requestTime": "01/Jun/2020:10:28:36 +0000",
+      "path": "/dev/project",
+      "accountId": "604754371110",
+      "protocol": "HTTP/1.1",
+      "stage": "dev",
+      "domainPrefix": "6o1str51jg",
+      "requestTimeEpoch": 1591007316857,
+      "requestId": "5db22063-b55e-46a0-8029-e7335c928aab",
+      "identity": {
+        "cognitoIdentityPoolId": null,
+        "accountId": null,
+        "cognitoIdentityId": null,
+        "caller": null,
+        "sourceIp": "87.116.177.49",
+        "principalOrgId": null,
+        "accessKey": null,
+        "cognitoAuthenticationType": null,
+        "cognitoAuthenticationProvider": null,
+        "userArn": null,
+        "userAgent": "PostmanRuntime/7.25.0",
+        "user": null
+      },
+      "domainName": "6o1str51jg.execute-api.us-east-2.amazonaws.com",
+      "apiId": "6o1str51jg"
+    },
+    "body": "{\n\t\"projectName\": \"Project\",\n\t\"projectNumber\": 2,\n\t\"clientName\": \"twoTables\",\n\t\"teamMembers\" : [\n\t\t{\n\t\t\t\"email\": \"filip.milanko@endava.com\",\n\t\t\t\"position\": \"Senior Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"dragantosic@endava.com\",\n\t\t\t\"position\": \"Project Manager\"\n\t\t}]\n}",
+    "isBase64Encoded": false
+  },
+  "existingProjectResponse": {
+    "body": "ExpressionAttributeValues contains invalid value: Input collection contains duplicates for key :projectNumber",
+    "headers": {
+      "Access-Control-Allow-Credentials": true,
+      "Access-Control-Allow-Origin": "*",
+      "Cache-Control": "no-store",
+      "Content-Type": "application/json"
+    },
+    "statusCode": 500
+  },
+  "positionNotMatching": {
+    "resource": "/project",
+    "path": "/project",
+    "httpMethod": "POST",
+    "headers": {
+      "Accept": "*/*",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Cache-Control": "no-cache",
+      "CloudFront-Forwarded-Proto": "https",
+      "CloudFront-Is-Desktop-Viewer": "true",
+      "CloudFront-Is-Mobile-Viewer": "false",
+      "CloudFront-Is-SmartTV-Viewer": "false",
+      "CloudFront-Is-Tablet-Viewer": "false",
+      "CloudFront-Viewer-Country": "RS",
+      "Content-Type": "application/json",
+      "Host": "6o1str51jg.execute-api.us-east-2.amazonaws.com",
+      "Postman-Token": "2b08f42f-a629-4d57-b960-9b88adee065a",
+      "User-Agent": "PostmanRuntime/7.25.0",
+      "Via": "1.1 93f2a781416975f99355acc4c81d60d2.cloudfront.net (CloudFront)",
+      "X-Amz-Cf-Id": "8KKbLIoaYCW6Owby2cgBtnzZcXbi4Jzljrr6pdIt44uEDmVDrgYZ0g==",
+      "X-Amzn-Trace-Id": "Root=1-5ed4d854-a76ff1b0d092842023e05dc0",
+      "X-Forwarded-For": "87.116.177.49, 130.176.13.96",
+      "X-Forwarded-Port": "443",
+      "X-Forwarded-Proto": "https"
+    },
+    "multiValueHeaders": {
+      "Accept": [
+        "*/*"
+      ],
+      "Accept-Encoding": [
+        "gzip, deflate, br"
+      ],
+      "Cache-Control": [
+        "no-cache"
+      ],
+      "CloudFront-Forwarded-Proto": [
+        "https"
+      ],
+      "CloudFront-Is-Desktop-Viewer": [
+        "true"
+      ],
+      "CloudFront-Is-Mobile-Viewer": [
+        "false"
+      ],
+      "CloudFront-Is-SmartTV-Viewer": [
+        "false"
+      ],
+      "CloudFront-Is-Tablet-Viewer": [
+        "false"
+      ],
+      "CloudFront-Viewer-Country": [
+        "RS"
+      ],
+      "Content-Type": [
+        "application/json"
+      ],
+      "Host": [
+        "6o1str51jg.execute-api.us-east-2.amazonaws.com"
+      ],
+      "Postman-Token": [
+        "2b08f42f-a629-4d57-b960-9b88adee065a"
+      ],
+      "User-Agent": [
+        "PostmanRuntime/7.25.0"
+      ],
+      "Via": [
+        "1.1 93f2a781416975f99355acc4c81d60d2.cloudfront.net (CloudFront)"
+      ],
+      "X-Amz-Cf-Id": [
+        "8KKbLIoaYCW6Owby2cgBtnzZcXbi4Jzljrr6pdIt44uEDmVDrgYZ0g=="
+      ],
+      "X-Amzn-Trace-Id": [
+        "Root=1-5ed4d854-a76ff1b0d092842023e05dc0"
+      ],
+      "X-Forwarded-For": [
+        "87.116.177.49, 130.176.13.96"
+      ],
+      "X-Forwarded-Port": [
+        "443"
+      ],
+      "X-Forwarded-Proto": [
+        "https"
+      ]
+    },
+    "queryStringParameters": null,
+    "multiValueQueryStringParameters": null,
+    "pathParameters": null,
+    "stageVariables": null,
+    "requestContext": {
+      "resourceId": "oilg74",
+      "resourcePath": "/project",
+      "httpMethod": "POST",
+      "extendedRequestId": "Nca9RGFpiYcFmWQ=",
+      "requestTime": "01/Jun/2020:10:28:36 +0000",
+      "path": "/dev/project",
+      "accountId": "604754371110",
+      "protocol": "HTTP/1.1",
+      "stage": "dev",
+      "domainPrefix": "6o1str51jg",
+      "requestTimeEpoch": 1591007316857,
+      "requestId": "5db22063-b55e-46a0-8029-e7335c928aab",
+      "identity": {
+        "cognitoIdentityPoolId": null,
+        "accountId": null,
+        "cognitoIdentityId": null,
+        "caller": null,
+        "sourceIp": "87.116.177.49",
+        "principalOrgId": null,
+        "accessKey": null,
+        "cognitoAuthenticationType": null,
+        "cognitoAuthenticationProvider": null,
+        "userArn": null,
+        "userAgent": "PostmanRuntime/7.25.0",
+        "user": null
+      },
+      "domainName": "6o1str51jg.execute-api.us-east-2.amazonaws.com",
+      "apiId": "6o1str51jg"
+    },
+    "body": "{\n\t\"projectName\": \"Project\",\n\t\"projectNumber\": 999992,\n\t\"clientName\": \"twoTables\",\n\t\"teamMembers\" : [\n\t\t{\n\t\t\t\"email\": \"filip.milanko@endava.com\",\n\t\t\t\"position\": \"Senior Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"dragantosic@endava.com\",\n\t\t\t\"position\": \"Intern\"\n\t\t}]\n}",
+    "isBase64Encoded": false
+  },
+  "positionNotMatchingResponse": {
+    "body": "User position doesn't match user position in dynamoDb!",
+    "headers": {
+      "Access-Control-Allow-Credentials": true,
+      "Access-Control-Allow-Origin": "*",
+      "Cache-Control": "no-store",
+      "Content-Type": "application/json"
+    },
+    "statusCode": 400
+  },
+  "notExistingUser": {
+    "resource": "/project",
+    "path": "/project",
+    "httpMethod": "POST",
+    "headers": {
+      "Accept": "*/*",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Cache-Control": "no-cache",
+      "CloudFront-Forwarded-Proto": "https",
+      "CloudFront-Is-Desktop-Viewer": "true",
+      "CloudFront-Is-Mobile-Viewer": "false",
+      "CloudFront-Is-SmartTV-Viewer": "false",
+      "CloudFront-Is-Tablet-Viewer": "false",
+      "CloudFront-Viewer-Country": "RS",
+      "Content-Type": "application/json",
+      "Host": "6o1str51jg.execute-api.us-east-2.amazonaws.com",
+      "Postman-Token": "2b08f42f-a629-4d57-b960-9b88adee065a",
+      "User-Agent": "PostmanRuntime/7.25.0",
+      "Via": "1.1 93f2a781416975f99355acc4c81d60d2.cloudfront.net (CloudFront)",
+      "X-Amz-Cf-Id": "8KKbLIoaYCW6Owby2cgBtnzZcXbi4Jzljrr6pdIt44uEDmVDrgYZ0g==",
+      "X-Amzn-Trace-Id": "Root=1-5ed4d854-a76ff1b0d092842023e05dc0",
+      "X-Forwarded-For": "87.116.177.49, 130.176.13.96",
+      "X-Forwarded-Port": "443",
+      "X-Forwarded-Proto": "https"
+    },
+    "multiValueHeaders": {
+      "Accept": [
+        "*/*"
+      ],
+      "Accept-Encoding": [
+        "gzip, deflate, br"
+      ],
+      "Cache-Control": [
+        "no-cache"
+      ],
+      "CloudFront-Forwarded-Proto": [
+        "https"
+      ],
+      "CloudFront-Is-Desktop-Viewer": [
+        "true"
+      ],
+      "CloudFront-Is-Mobile-Viewer": [
+        "false"
+      ],
+      "CloudFront-Is-SmartTV-Viewer": [
+        "false"
+      ],
+      "CloudFront-Is-Tablet-Viewer": [
+        "false"
+      ],
+      "CloudFront-Viewer-Country": [
+        "RS"
+      ],
+      "Content-Type": [
+        "application/json"
+      ],
+      "Host": [
+        "6o1str51jg.execute-api.us-east-2.amazonaws.com"
+      ],
+      "Postman-Token": [
+        "2b08f42f-a629-4d57-b960-9b88adee065a"
+      ],
+      "User-Agent": [
+        "PostmanRuntime/7.25.0"
+      ],
+      "Via": [
+        "1.1 93f2a781416975f99355acc4c81d60d2.cloudfront.net (CloudFront)"
+      ],
+      "X-Amz-Cf-Id": [
+        "8KKbLIoaYCW6Owby2cgBtnzZcXbi4Jzljrr6pdIt44uEDmVDrgYZ0g=="
+      ],
+      "X-Amzn-Trace-Id": [
+        "Root=1-5ed4d854-a76ff1b0d092842023e05dc0"
+      ],
+      "X-Forwarded-For": [
+        "87.116.177.49, 130.176.13.96"
+      ],
+      "X-Forwarded-Port": [
+        "443"
+      ],
+      "X-Forwarded-Proto": [
+        "https"
+      ]
+    },
+    "queryStringParameters": null,
+    "multiValueQueryStringParameters": null,
+    "pathParameters": null,
+    "stageVariables": null,
+    "requestContext": {
+      "resourceId": "oilg74",
+      "resourcePath": "/project",
+      "httpMethod": "POST",
+      "extendedRequestId": "Nca9RGFpiYcFmWQ=",
+      "requestTime": "01/Jun/2020:10:28:36 +0000",
+      "path": "/dev/project",
+      "accountId": "604754371110",
+      "protocol": "HTTP/1.1",
+      "stage": "dev",
+      "domainPrefix": "6o1str51jg",
+      "requestTimeEpoch": 1591007316857,
+      "requestId": "5db22063-b55e-46a0-8029-e7335c928aab",
+      "identity": {
+        "cognitoIdentityPoolId": null,
+        "accountId": null,
+        "cognitoIdentityId": null,
+        "caller": null,
+        "sourceIp": "87.116.177.49",
+        "principalOrgId": null,
+        "accessKey": null,
+        "cognitoAuthenticationType": null,
+        "cognitoAuthenticationProvider": null,
+        "userArn": null,
+        "userAgent": "PostmanRuntime/7.25.0",
+        "user": null
+      },
+      "domainName": "6o1str51jg.execute-api.us-east-2.amazonaws.com",
+      "apiId": "6o1str51jg"
+    },
+    "body": "{\n\t\"projectName\": \"Project\",\n\t\"projectNumber\": 99993,\n\t\"clientName\": \"twoTables\",\n\t\"teamMembers\" : [\n\t\t{\n\t\t\t\"email\": \"filip\",\n\t\t\t\"position\": \"Senior Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"dragantosic@endava.com\",\n\t\t\t\"position\": \"Project Manager\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"vlada.sivacki@endava.com\",\n\t\t\t\"position\": \"Head Of Development\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"tijana.andric@endava.com\",\n\t\t\t\"position\" : \"UX Design\"\n\t\t}]\n}",
+    "isBase64Encoded": false
+  },
+  "notExistingUserResponse": {
+    "body": "Team member not found!",
+    "headers": {
+      "Access-Control-Allow-Credentials": true,
+      "Access-Control-Allow-Origin": "*",
+      "Cache-Control": "no-store",
+      "Content-Type": "application/json"
+    },
+    "statusCode": 404
+  },
+  "invalidTypeTeamMembers": {
+    "resource": "/project",
+    "path": "/project",
+    "httpMethod": "POST",
+    "headers": {
+      "Accept": "*/*",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Cache-Control": "no-cache",
+      "CloudFront-Forwarded-Proto": "https",
+      "CloudFront-Is-Desktop-Viewer": "true",
+      "CloudFront-Is-Mobile-Viewer": "false",
+      "CloudFront-Is-SmartTV-Viewer": "false",
+      "CloudFront-Is-Tablet-Viewer": "false",
+      "CloudFront-Viewer-Country": "RS",
+      "Content-Type": "application/json",
+      "Host": "6o1str51jg.execute-api.us-east-2.amazonaws.com",
+      "Postman-Token": "2b08f42f-a629-4d57-b960-9b88adee065a",
+      "User-Agent": "PostmanRuntime/7.25.0",
+      "Via": "1.1 93f2a781416975f99355acc4c81d60d2.cloudfront.net (CloudFront)",
+      "X-Amz-Cf-Id": "8KKbLIoaYCW6Owby2cgBtnzZcXbi4Jzljrr6pdIt44uEDmVDrgYZ0g==",
+      "X-Amzn-Trace-Id": "Root=1-5ed4d854-a76ff1b0d092842023e05dc0",
+      "X-Forwarded-For": "87.116.177.49, 130.176.13.96",
+      "X-Forwarded-Port": "443",
+      "X-Forwarded-Proto": "https"
+    },
+    "multiValueHeaders": {
+      "Accept": [
+        "*/*"
+      ],
+      "Accept-Encoding": [
+        "gzip, deflate, br"
+      ],
+      "Cache-Control": [
+        "no-cache"
+      ],
+      "CloudFront-Forwarded-Proto": [
+        "https"
+      ],
+      "CloudFront-Is-Desktop-Viewer": [
+        "true"
+      ],
+      "CloudFront-Is-Mobile-Viewer": [
+        "false"
+      ],
+      "CloudFront-Is-SmartTV-Viewer": [
+        "false"
+      ],
+      "CloudFront-Is-Tablet-Viewer": [
+        "false"
+      ],
+      "CloudFront-Viewer-Country": [
+        "RS"
+      ],
+      "Content-Type": [
+        "application/json"
+      ],
+      "Host": [
+        "6o1str51jg.execute-api.us-east-2.amazonaws.com"
+      ],
+      "Postman-Token": [
+        "2b08f42f-a629-4d57-b960-9b88adee065a"
+      ],
+      "User-Agent": [
+        "PostmanRuntime/7.25.0"
+      ],
+      "Via": [
+        "1.1 93f2a781416975f99355acc4c81d60d2.cloudfront.net (CloudFront)"
+      ],
+      "X-Amz-Cf-Id": [
+        "8KKbLIoaYCW6Owby2cgBtnzZcXbi4Jzljrr6pdIt44uEDmVDrgYZ0g=="
+      ],
+      "X-Amzn-Trace-Id": [
+        "Root=1-5ed4d854-a76ff1b0d092842023e05dc0"
+      ],
+      "X-Forwarded-For": [
+        "87.116.177.49, 130.176.13.96"
+      ],
+      "X-Forwarded-Port": [
+        "443"
+      ],
+      "X-Forwarded-Proto": [
+        "https"
+      ]
+    },
+    "queryStringParameters": null,
+    "multiValueQueryStringParameters": null,
+    "pathParameters": null,
+    "stageVariables": null,
+    "requestContext": {
+      "resourceId": "oilg74",
+      "resourcePath": "/project",
+      "httpMethod": "POST",
+      "extendedRequestId": "Nca9RGFpiYcFmWQ=",
+      "requestTime": "01/Jun/2020:10:28:36 +0000",
+      "path": "/dev/project",
+      "accountId": "604754371110",
+      "protocol": "HTTP/1.1",
+      "stage": "dev",
+      "domainPrefix": "6o1str51jg",
+      "requestTimeEpoch": 1591007316857,
+      "requestId": "5db22063-b55e-46a0-8029-e7335c928aab",
+      "identity": {
+        "cognitoIdentityPoolId": null,
+        "accountId": null,
+        "cognitoIdentityId": null,
+        "caller": null,
+        "sourceIp": "87.116.177.49",
+        "principalOrgId": null,
+        "accessKey": null,
+        "cognitoAuthenticationType": null,
+        "cognitoAuthenticationProvider": null,
+        "userArn": null,
+        "userAgent": "PostmanRuntime/7.25.0",
+        "user": null
+      },
+      "domainName": "6o1str51jg.execute-api.us-east-2.amazonaws.com",
+      "apiId": "6o1str51jg"
+    },
+    "body": "{\n\t\"projectName\": \"Project\",\n\t\"projectNumber\": 15,\n\t\"clientName\": \"twoTables\",\n\t\"teamMembers\" : {}\n}",
+    "isBase64Encoded": false
+  },
+  "invalidTypeTeamMembersResponse": {
+    "body": "Team members must be a list of objects!",
+    "headers": {
+      "Access-Control-Allow-Credentials": true,
+      "Access-Control-Allow-Origin": "*",
+      "Cache-Control": "no-store",
+      "Content-Type": "application/json"
+    },
+    "statusCode": 400
+  },
+  "invalidClientName": {
+    "resource": "/project",
+    "path": "/project",
+    "httpMethod": "POST",
+    "headers": {
+      "Accept": "*/*",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Cache-Control": "no-cache",
+      "CloudFront-Forwarded-Proto": "https",
+      "CloudFront-Is-Desktop-Viewer": "true",
+      "CloudFront-Is-Mobile-Viewer": "false",
+      "CloudFront-Is-SmartTV-Viewer": "false",
+      "CloudFront-Is-Tablet-Viewer": "false",
+      "CloudFront-Viewer-Country": "RS",
+      "Content-Type": "application/json",
+      "Host": "6o1str51jg.execute-api.us-east-2.amazonaws.com",
+      "Postman-Token": "2b08f42f-a629-4d57-b960-9b88adee065a",
+      "User-Agent": "PostmanRuntime/7.25.0",
+      "Via": "1.1 93f2a781416975f99355acc4c81d60d2.cloudfront.net (CloudFront)",
+      "X-Amz-Cf-Id": "8KKbLIoaYCW6Owby2cgBtnzZcXbi4Jzljrr6pdIt44uEDmVDrgYZ0g==",
+      "X-Amzn-Trace-Id": "Root=1-5ed4d854-a76ff1b0d092842023e05dc0",
+      "X-Forwarded-For": "87.116.177.49, 130.176.13.96",
+      "X-Forwarded-Port": "443",
+      "X-Forwarded-Proto": "https"
+    },
+    "multiValueHeaders": {
+      "Accept": [
+        "*/*"
+      ],
+      "Accept-Encoding": [
+        "gzip, deflate, br"
+      ],
+      "Cache-Control": [
+        "no-cache"
+      ],
+      "CloudFront-Forwarded-Proto": [
+        "https"
+      ],
+      "CloudFront-Is-Desktop-Viewer": [
+        "true"
+      ],
+      "CloudFront-Is-Mobile-Viewer": [
+        "false"
+      ],
+      "CloudFront-Is-SmartTV-Viewer": [
+        "false"
+      ],
+      "CloudFront-Is-Tablet-Viewer": [
+        "false"
+      ],
+      "CloudFront-Viewer-Country": [
+        "RS"
+      ],
+      "Content-Type": [
+        "application/json"
+      ],
+      "Host": [
+        "6o1str51jg.execute-api.us-east-2.amazonaws.com"
+      ],
+      "Postman-Token": [
+        "2b08f42f-a629-4d57-b960-9b88adee065a"
+      ],
+      "User-Agent": [
+        "PostmanRuntime/7.25.0"
+      ],
+      "Via": [
+        "1.1 93f2a781416975f99355acc4c81d60d2.cloudfront.net (CloudFront)"
+      ],
+      "X-Amz-Cf-Id": [
+        "8KKbLIoaYCW6Owby2cgBtnzZcXbi4Jzljrr6pdIt44uEDmVDrgYZ0g=="
+      ],
+      "X-Amzn-Trace-Id": [
+        "Root=1-5ed4d854-a76ff1b0d092842023e05dc0"
+      ],
+      "X-Forwarded-For": [
+        "87.116.177.49, 130.176.13.96"
+      ],
+      "X-Forwarded-Port": [
+        "443"
+      ],
+      "X-Forwarded-Proto": [
+        "https"
+      ]
+    },
+    "queryStringParameters": null,
+    "multiValueQueryStringParameters": null,
+    "pathParameters": null,
+    "stageVariables": null,
+    "requestContext": {
+      "resourceId": "oilg74",
+      "resourcePath": "/project",
+      "httpMethod": "POST",
+      "extendedRequestId": "Nca9RGFpiYcFmWQ=",
+      "requestTime": "01/Jun/2020:10:28:36 +0000",
+      "path": "/dev/project",
+      "accountId": "604754371110",
+      "protocol": "HTTP/1.1",
+      "stage": "dev",
+      "domainPrefix": "6o1str51jg",
+      "requestTimeEpoch": 1591007316857,
+      "requestId": "5db22063-b55e-46a0-8029-e7335c928aab",
+      "identity": {
+        "cognitoIdentityPoolId": null,
+        "accountId": null,
+        "cognitoIdentityId": null,
+        "caller": null,
+        "sourceIp": "87.116.177.49",
+        "principalOrgId": null,
+        "accessKey": null,
+        "cognitoAuthenticationType": null,
+        "cognitoAuthenticationProvider": null,
+        "userArn": null,
+        "userAgent": "PostmanRuntime/7.25.0",
+        "user": null
+      },
+      "domainName": "6o1str51jg.execute-api.us-east-2.amazonaws.com",
+      "apiId": "6o1str51jg"
+    },
+    "body": "{\n\t\"projectName\": \"Project\",\n\t\"projectNumber\": 15,\n\t\"clientName\": 123123,\n\t\"teamMembers\" : [\n\t\t{\n\t\t\t\"email\": \"filip.milanko@endava.com\",\n\t\t\t\"position\": \"Senior Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"dragantosic@endava.com\",\n\t\t\t\"position\": \"Project Manager\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"vlada.sivacki@endava.com\",\n\t\t\t\"position\": \"Head Of Development\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"tijana.andric@endava.com\",\n\t\t\t\"position\" : \"UX Design\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"Nevena@endava.com\",\n\t\t\t\"position\": \"Human Resources\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"anjaradenkovic@endava.com\",\n\t\t\t\"position\": \"Junior QA\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"newUser@endava.com\",\n\t\t\t\"position\": \"Senior Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"jovanatodorov@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user1@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user2@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user3@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user4@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user5@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user6@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user7@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user8@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user9@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user10@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user11@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user12@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user13@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user14@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user15@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user16@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user17@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user18@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user19@endava.com\",\n\t\t\t\"position\" : \"Senior Developer\"\n\t\t}\n\t\t]\n}",
+    "isBase64Encoded": false
+  },
+  "invalidClientNameResponse": {
+    "body": "Client name must be a string!",
+    "headers": {
+      "Access-Control-Allow-Credentials": true,
+      "Access-Control-Allow-Origin": "*",
+      "Cache-Control": "no-store",
+      "Content-Type": "application/json"
+    },
+    "statusCode": 400
+  },
+  "noTeamMembers": {
+    "resource": "/project",
+    "path": "/project",
+    "httpMethod": "POST",
+    "headers": {
+      "Accept": "*/*",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Cache-Control": "no-cache",
+      "CloudFront-Forwarded-Proto": "https",
+      "CloudFront-Is-Desktop-Viewer": "true",
+      "CloudFront-Is-Mobile-Viewer": "false",
+      "CloudFront-Is-SmartTV-Viewer": "false",
+      "CloudFront-Is-Tablet-Viewer": "false",
+      "CloudFront-Viewer-Country": "RS",
+      "Content-Type": "application/json",
+      "Host": "6o1str51jg.execute-api.us-east-2.amazonaws.com",
+      "Postman-Token": "2b08f42f-a629-4d57-b960-9b88adee065a",
+      "User-Agent": "PostmanRuntime/7.25.0",
+      "Via": "1.1 93f2a781416975f99355acc4c81d60d2.cloudfront.net (CloudFront)",
+      "X-Amz-Cf-Id": "8KKbLIoaYCW6Owby2cgBtnzZcXbi4Jzljrr6pdIt44uEDmVDrgYZ0g==",
+      "X-Amzn-Trace-Id": "Root=1-5ed4d854-a76ff1b0d092842023e05dc0",
+      "X-Forwarded-For": "87.116.177.49, 130.176.13.96",
+      "X-Forwarded-Port": "443",
+      "X-Forwarded-Proto": "https"
+    },
+    "multiValueHeaders": {
+      "Accept": [
+        "*/*"
+      ],
+      "Accept-Encoding": [
+        "gzip, deflate, br"
+      ],
+      "Cache-Control": [
+        "no-cache"
+      ],
+      "CloudFront-Forwarded-Proto": [
+        "https"
+      ],
+      "CloudFront-Is-Desktop-Viewer": [
+        "true"
+      ],
+      "CloudFront-Is-Mobile-Viewer": [
+        "false"
+      ],
+      "CloudFront-Is-SmartTV-Viewer": [
+        "false"
+      ],
+      "CloudFront-Is-Tablet-Viewer": [
+        "false"
+      ],
+      "CloudFront-Viewer-Country": [
+        "RS"
+      ],
+      "Content-Type": [
+        "application/json"
+      ],
+      "Host": [
+        "6o1str51jg.execute-api.us-east-2.amazonaws.com"
+      ],
+      "Postman-Token": [
+        "2b08f42f-a629-4d57-b960-9b88adee065a"
+      ],
+      "User-Agent": [
+        "PostmanRuntime/7.25.0"
+      ],
+      "Via": [
+        "1.1 93f2a781416975f99355acc4c81d60d2.cloudfront.net (CloudFront)"
+      ],
+      "X-Amz-Cf-Id": [
+        "8KKbLIoaYCW6Owby2cgBtnzZcXbi4Jzljrr6pdIt44uEDmVDrgYZ0g=="
+      ],
+      "X-Amzn-Trace-Id": [
+        "Root=1-5ed4d854-a76ff1b0d092842023e05dc0"
+      ],
+      "X-Forwarded-For": [
+        "87.116.177.49, 130.176.13.96"
+      ],
+      "X-Forwarded-Port": [
+        "443"
+      ],
+      "X-Forwarded-Proto": [
+        "https"
+      ]
+    },
+    "queryStringParameters": null,
+    "multiValueQueryStringParameters": null,
+    "pathParameters": null,
+    "stageVariables": null,
+    "requestContext": {
+      "resourceId": "oilg74",
+      "resourcePath": "/project",
+      "httpMethod": "POST",
+      "extendedRequestId": "Nca9RGFpiYcFmWQ=",
+      "requestTime": "01/Jun/2020:10:28:36 +0000",
+      "path": "/dev/project",
+      "accountId": "604754371110",
+      "protocol": "HTTP/1.1",
+      "stage": "dev",
+      "domainPrefix": "6o1str51jg",
+      "requestTimeEpoch": 1591007316857,
+      "requestId": "5db22063-b55e-46a0-8029-e7335c928aab",
+      "identity": {
+        "cognitoIdentityPoolId": null,
+        "accountId": null,
+        "cognitoIdentityId": null,
+        "caller": null,
+        "sourceIp": "87.116.177.49",
+        "principalOrgId": null,
+        "accessKey": null,
+        "cognitoAuthenticationType": null,
+        "cognitoAuthenticationProvider": null,
+        "userArn": null,
+        "userAgent": "PostmanRuntime/7.25.0",
+        "user": null
+      },
+      "domainName": "6o1str51jg.execute-api.us-east-2.amazonaws.com",
+      "apiId": "6o1str51jg"
+    },
+    "body": "{\n\t\"projectName\": \"testName\",\n\t\"projectNumber\": 15,\n\t\"clientName\": \"twoTables\",\n\t\"teamMembers\" : []\n}",
+    "isBase64Encoded": false
+  },
+  "noTeamMembersResponse": {
+    "body": "There must be at least one team member.",
+    "headers": {
+      "Access-Control-Allow-Credentials": true,
+      "Access-Control-Allow-Origin": "*",
+      "Cache-Control": "no-store",
+      "Content-Type": "application/json"
+    },
+    "statusCode": 400
+  },
+  "invalidProjectNumber": {
+    "resource": "/project",
+    "path": "/project",
+    "httpMethod": "POST",
+    "headers": {
+      "Accept": "*/*",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Cache-Control": "no-cache",
+      "CloudFront-Forwarded-Proto": "https",
+      "CloudFront-Is-Desktop-Viewer": "true",
+      "CloudFront-Is-Mobile-Viewer": "false",
+      "CloudFront-Is-SmartTV-Viewer": "false",
+      "CloudFront-Is-Tablet-Viewer": "false",
+      "CloudFront-Viewer-Country": "RS",
+      "Content-Type": "application/json",
+      "Host": "6o1str51jg.execute-api.us-east-2.amazonaws.com",
+      "Postman-Token": "2b08f42f-a629-4d57-b960-9b88adee065a",
+      "User-Agent": "PostmanRuntime/7.25.0",
+      "Via": "1.1 93f2a781416975f99355acc4c81d60d2.cloudfront.net (CloudFront)",
+      "X-Amz-Cf-Id": "8KKbLIoaYCW6Owby2cgBtnzZcXbi4Jzljrr6pdIt44uEDmVDrgYZ0g==",
+      "X-Amzn-Trace-Id": "Root=1-5ed4d854-a76ff1b0d092842023e05dc0",
+      "X-Forwarded-For": "87.116.177.49, 130.176.13.96",
+      "X-Forwarded-Port": "443",
+      "X-Forwarded-Proto": "https"
+    },
+    "multiValueHeaders": {
+      "Accept": [
+        "*/*"
+      ],
+      "Accept-Encoding": [
+        "gzip, deflate, br"
+      ],
+      "Cache-Control": [
+        "no-cache"
+      ],
+      "CloudFront-Forwarded-Proto": [
+        "https"
+      ],
+      "CloudFront-Is-Desktop-Viewer": [
+        "true"
+      ],
+      "CloudFront-Is-Mobile-Viewer": [
+        "false"
+      ],
+      "CloudFront-Is-SmartTV-Viewer": [
+        "false"
+      ],
+      "CloudFront-Is-Tablet-Viewer": [
+        "false"
+      ],
+      "CloudFront-Viewer-Country": [
+        "RS"
+      ],
+      "Content-Type": [
+        "application/json"
+      ],
+      "Host": [
+        "6o1str51jg.execute-api.us-east-2.amazonaws.com"
+      ],
+      "Postman-Token": [
+        "2b08f42f-a629-4d57-b960-9b88adee065a"
+      ],
+      "User-Agent": [
+        "PostmanRuntime/7.25.0"
+      ],
+      "Via": [
+        "1.1 93f2a781416975f99355acc4c81d60d2.cloudfront.net (CloudFront)"
+      ],
+      "X-Amz-Cf-Id": [
+        "8KKbLIoaYCW6Owby2cgBtnzZcXbi4Jzljrr6pdIt44uEDmVDrgYZ0g=="
+      ],
+      "X-Amzn-Trace-Id": [
+        "Root=1-5ed4d854-a76ff1b0d092842023e05dc0"
+      ],
+      "X-Forwarded-For": [
+        "87.116.177.49, 130.176.13.96"
+      ],
+      "X-Forwarded-Port": [
+        "443"
+      ],
+      "X-Forwarded-Proto": [
+        "https"
+      ]
+    },
+    "queryStringParameters": null,
+    "multiValueQueryStringParameters": null,
+    "pathParameters": null,
+    "stageVariables": null,
+    "requestContext": {
+      "resourceId": "oilg74",
+      "resourcePath": "/project",
+      "httpMethod": "POST",
+      "extendedRequestId": "Nca9RGFpiYcFmWQ=",
+      "requestTime": "01/Jun/2020:10:28:36 +0000",
+      "path": "/dev/project",
+      "accountId": "604754371110",
+      "protocol": "HTTP/1.1",
+      "stage": "dev",
+      "domainPrefix": "6o1str51jg",
+      "requestTimeEpoch": 1591007316857,
+      "requestId": "5db22063-b55e-46a0-8029-e7335c928aab",
+      "identity": {
+        "cognitoIdentityPoolId": null,
+        "accountId": null,
+        "cognitoIdentityId": null,
+        "caller": null,
+        "sourceIp": "87.116.177.49",
+        "principalOrgId": null,
+        "accessKey": null,
+        "cognitoAuthenticationType": null,
+        "cognitoAuthenticationProvider": null,
+        "userArn": null,
+        "userAgent": "PostmanRuntime/7.25.0",
+        "user": null
+      },
+      "domainName": "6o1str51jg.execute-api.us-east-2.amazonaws.com",
+      "apiId": "6o1str51jg"
+    },
+    "body": "{\n\t\"projectName\": \"testName\",\n\t\"projectNumber\": \"15\",\n\t\"clientName\": \"twoTables\",\n\t\"teamMembers\" : [\n\t\t{\n\t\t\t\"email\": \"filip.milanko@endava.com\",\n\t\t\t\"position\": \"Senior Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"dragantosic@endava.com\",\n\t\t\t\"position\": \"Project Manager\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"vlada.sivacki@endava.com\",\n\t\t\t\"position\": \"Head Of Development\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"tijana.andric@endava.com\",\n\t\t\t\"position\" : \"UX Design\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"Nevena@endava.com\",\n\t\t\t\"position\": \"Human Resources\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"anjaradenkovic@endava.com\",\n\t\t\t\"position\": \"Junior QA\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"newUser@endava.com\",\n\t\t\t\"position\": \"Senior Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"jovanatodorov@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user1@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user2@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user3@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user4@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user5@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user6@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user7@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user8@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user9@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user10@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user11@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user12@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user13@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user14@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user15@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user16@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user17@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user18@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user19@endava.com\",\n\t\t\t\"position\" : \"Senior Developer\"\n\t\t}\n\t\t]\n}",
+    "isBase64Encoded": false
+  },
+  "invalidProjectNumberResponse": {
+    "body": "Project number must be a number!",
+    "headers": {
+      "Access-Control-Allow-Credentials": true,
+      "Access-Control-Allow-Origin": "*",
+      "Cache-Control": "no-store",
+      "Content-Type": "application/json"
+    },
+    "statusCode": 400
+  },
+  "invalidProjectName": {
+    "resource": "/project",
+    "path": "/project",
+    "httpMethod": "POST",
+    "headers": {
+      "Accept": "*/*",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Cache-Control": "no-cache",
+      "CloudFront-Forwarded-Proto": "https",
+      "CloudFront-Is-Desktop-Viewer": "true",
+      "CloudFront-Is-Mobile-Viewer": "false",
+      "CloudFront-Is-SmartTV-Viewer": "false",
+      "CloudFront-Is-Tablet-Viewer": "false",
+      "CloudFront-Viewer-Country": "RS",
+      "Content-Type": "application/json",
+      "Host": "6o1str51jg.execute-api.us-east-2.amazonaws.com",
+      "Postman-Token": "2b08f42f-a629-4d57-b960-9b88adee065a",
+      "User-Agent": "PostmanRuntime/7.25.0",
+      "Via": "1.1 93f2a781416975f99355acc4c81d60d2.cloudfront.net (CloudFront)",
+      "X-Amz-Cf-Id": "8KKbLIoaYCW6Owby2cgBtnzZcXbi4Jzljrr6pdIt44uEDmVDrgYZ0g==",
+      "X-Amzn-Trace-Id": "Root=1-5ed4d854-a76ff1b0d092842023e05dc0",
+      "X-Forwarded-For": "87.116.177.49, 130.176.13.96",
+      "X-Forwarded-Port": "443",
+      "X-Forwarded-Proto": "https"
+    },
+    "multiValueHeaders": {
+      "Accept": [
+        "*/*"
+      ],
+      "Accept-Encoding": [
+        "gzip, deflate, br"
+      ],
+      "Cache-Control": [
+        "no-cache"
+      ],
+      "CloudFront-Forwarded-Proto": [
+        "https"
+      ],
+      "CloudFront-Is-Desktop-Viewer": [
+        "true"
+      ],
+      "CloudFront-Is-Mobile-Viewer": [
+        "false"
+      ],
+      "CloudFront-Is-SmartTV-Viewer": [
+        "false"
+      ],
+      "CloudFront-Is-Tablet-Viewer": [
+        "false"
+      ],
+      "CloudFront-Viewer-Country": [
+        "RS"
+      ],
+      "Content-Type": [
+        "application/json"
+      ],
+      "Host": [
+        "6o1str51jg.execute-api.us-east-2.amazonaws.com"
+      ],
+      "Postman-Token": [
+        "2b08f42f-a629-4d57-b960-9b88adee065a"
+      ],
+      "User-Agent": [
+        "PostmanRuntime/7.25.0"
+      ],
+      "Via": [
+        "1.1 93f2a781416975f99355acc4c81d60d2.cloudfront.net (CloudFront)"
+      ],
+      "X-Amz-Cf-Id": [
+        "8KKbLIoaYCW6Owby2cgBtnzZcXbi4Jzljrr6pdIt44uEDmVDrgYZ0g=="
+      ],
+      "X-Amzn-Trace-Id": [
+        "Root=1-5ed4d854-a76ff1b0d092842023e05dc0"
+      ],
+      "X-Forwarded-For": [
+        "87.116.177.49, 130.176.13.96"
+      ],
+      "X-Forwarded-Port": [
+        "443"
+      ],
+      "X-Forwarded-Proto": [
+        "https"
+      ]
+    },
+    "queryStringParameters": null,
+    "multiValueQueryStringParameters": null,
+    "pathParameters": null,
+    "stageVariables": null,
+    "requestContext": {
+      "resourceId": "oilg74",
+      "resourcePath": "/project",
+      "httpMethod": "POST",
+      "extendedRequestId": "Nca9RGFpiYcFmWQ=",
+      "requestTime": "01/Jun/2020:10:28:36 +0000",
+      "path": "/dev/project",
+      "accountId": "604754371110",
+      "protocol": "HTTP/1.1",
+      "stage": "dev",
+      "domainPrefix": "6o1str51jg",
+      "requestTimeEpoch": 1591007316857,
+      "requestId": "5db22063-b55e-46a0-8029-e7335c928aab",
+      "identity": {
+        "cognitoIdentityPoolId": null,
+        "accountId": null,
+        "cognitoIdentityId": null,
+        "caller": null,
+        "sourceIp": "87.116.177.49",
+        "principalOrgId": null,
+        "accessKey": null,
+        "cognitoAuthenticationType": null,
+        "cognitoAuthenticationProvider": null,
+        "userArn": null,
+        "userAgent": "PostmanRuntime/7.25.0",
+        "user": null
+      },
+      "domainName": "6o1str51jg.execute-api.us-east-2.amazonaws.com",
+      "apiId": "6o1str51jg"
+    },
+    "body": "{\n\t\"projectName\": 700,\n\t\"projectNumber\": 15,\n\t\"clientName\": \"twoTables\",\n\t\"teamMembers\" : [\n\t\t{\n\t\t\t\"email\": \"filip.milanko@endava.com\",\n\t\t\t\"position\": \"Senior Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"dragantosic@endava.com\",\n\t\t\t\"position\": \"Project Manager\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"vlada.sivacki@endava.com\",\n\t\t\t\"position\": \"Head Of Development\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"tijana.andric@endava.com\",\n\t\t\t\"position\" : \"UX Design\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"Nevena@endava.com\",\n\t\t\t\"position\": \"Human Resources\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"anjaradenkovic@endava.com\",\n\t\t\t\"position\": \"Junior QA\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"newUser@endava.com\",\n\t\t\t\"position\": \"Senior Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"jovanatodorov@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user1@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user2@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user3@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user4@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user5@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user6@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user7@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user8@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user9@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user10@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user11@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user12@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user13@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user14@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user15@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user16@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user17@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user18@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user19@endava.com\",\n\t\t\t\"position\" : \"Senior Developer\"\n\t\t}\n\t\t]\n}",
+    "isBase64Encoded": false
+  },
+  "invalidProjectNameResponse": {
+    "body": "Project name must be a string!",
+    "headers": {
+      "Access-Control-Allow-Credentials": true,
+      "Access-Control-Allow-Origin": "*",
+      "Cache-Control": "no-store",
+      "Content-Type": "application/json"
+    },
+    "statusCode": 400
+  },
+  "missingProjectName":{
+    "resource": "/project",
+    "path": "/project",
+    "httpMethod": "POST",
+    "headers": {
+      "Accept": "*/*",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Cache-Control": "no-cache",
+      "CloudFront-Forwarded-Proto": "https",
+      "CloudFront-Is-Desktop-Viewer": "true",
+      "CloudFront-Is-Mobile-Viewer": "false",
+      "CloudFront-Is-SmartTV-Viewer": "false",
+      "CloudFront-Is-Tablet-Viewer": "false",
+      "CloudFront-Viewer-Country": "RS",
+      "Content-Type": "application/json",
+      "Host": "6o1str51jg.execute-api.us-east-2.amazonaws.com",
+      "Postman-Token": "2b08f42f-a629-4d57-b960-9b88adee065a",
+      "User-Agent": "PostmanRuntime/7.25.0",
+      "Via": "1.1 93f2a781416975f99355acc4c81d60d2.cloudfront.net (CloudFront)",
+      "X-Amz-Cf-Id": "8KKbLIoaYCW6Owby2cgBtnzZcXbi4Jzljrr6pdIt44uEDmVDrgYZ0g==",
+      "X-Amzn-Trace-Id": "Root=1-5ed4d854-a76ff1b0d092842023e05dc0",
+      "X-Forwarded-For": "87.116.177.49, 130.176.13.96",
+      "X-Forwarded-Port": "443",
+      "X-Forwarded-Proto": "https"
+    },
+    "multiValueHeaders": {
+      "Accept": [
+        "*/*"
+      ],
+      "Accept-Encoding": [
+        "gzip, deflate, br"
+      ],
+      "Cache-Control": [
+        "no-cache"
+      ],
+      "CloudFront-Forwarded-Proto": [
+        "https"
+      ],
+      "CloudFront-Is-Desktop-Viewer": [
+        "true"
+      ],
+      "CloudFront-Is-Mobile-Viewer": [
+        "false"
+      ],
+      "CloudFront-Is-SmartTV-Viewer": [
+        "false"
+      ],
+      "CloudFront-Is-Tablet-Viewer": [
+        "false"
+      ],
+      "CloudFront-Viewer-Country": [
+        "RS"
+      ],
+      "Content-Type": [
+        "application/json"
+      ],
+      "Host": [
+        "6o1str51jg.execute-api.us-east-2.amazonaws.com"
+      ],
+      "Postman-Token": [
+        "2b08f42f-a629-4d57-b960-9b88adee065a"
+      ],
+      "User-Agent": [
+        "PostmanRuntime/7.25.0"
+      ],
+      "Via": [
+        "1.1 93f2a781416975f99355acc4c81d60d2.cloudfront.net (CloudFront)"
+      ],
+      "X-Amz-Cf-Id": [
+        "8KKbLIoaYCW6Owby2cgBtnzZcXbi4Jzljrr6pdIt44uEDmVDrgYZ0g=="
+      ],
+      "X-Amzn-Trace-Id": [
+        "Root=1-5ed4d854-a76ff1b0d092842023e05dc0"
+      ],
+      "X-Forwarded-For": [
+        "87.116.177.49, 130.176.13.96"
+      ],
+      "X-Forwarded-Port": [
+        "443"
+      ],
+      "X-Forwarded-Proto": [
+        "https"
+      ]
+    },
+    "queryStringParameters": null,
+    "multiValueQueryStringParameters": null,
+    "pathParameters": null,
+    "stageVariables": null,
+    "requestContext": {
+      "resourceId": "oilg74",
+      "resourcePath": "/project",
+      "httpMethod": "POST",
+      "extendedRequestId": "Nca9RGFpiYcFmWQ=",
+      "requestTime": "01/Jun/2020:10:28:36 +0000",
+      "path": "/dev/project",
+      "accountId": "604754371110",
+      "protocol": "HTTP/1.1",
+      "stage": "dev",
+      "domainPrefix": "6o1str51jg",
+      "requestTimeEpoch": 1591007316857,
+      "requestId": "5db22063-b55e-46a0-8029-e7335c928aab",
+      "identity": {
+        "cognitoIdentityPoolId": null,
+        "accountId": null,
+        "cognitoIdentityId": null,
+        "caller": null,
+        "sourceIp": "87.116.177.49",
+        "principalOrgId": null,
+        "accessKey": null,
+        "cognitoAuthenticationType": null,
+        "cognitoAuthenticationProvider": null,
+        "userArn": null,
+        "userAgent": "PostmanRuntime/7.25.0",
+        "user": null
+      },
+      "domainName": "6o1str51jg.execute-api.us-east-2.amazonaws.com",
+      "apiId": "6o1str51jg"
+    },
+    "body": "{\n\t\"projectNumber\": 15,\n\t\"clientName\": \"twoTables\",\n\t\"teamMembers\" : [\n\t\t{\n\t\t\t\"email\": \"filip.milanko@endava.com\",\n\t\t\t\"position\": \"Senior Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"dragantosic@endava.com\",\n\t\t\t\"position\": \"Project Manager\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"vlada.sivacki@endava.com\",\n\t\t\t\"position\": \"Head Of Development\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"tijana.andric@endava.com\",\n\t\t\t\"position\" : \"UX Design\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"Nevena@endava.com\",\n\t\t\t\"position\": \"Human Resources\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"anjaradenkovic@endava.com\",\n\t\t\t\"position\": \"Junior QA\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"newUser@endava.com\",\n\t\t\t\"position\": \"Senior Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"jovanatodorov@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user1@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user2@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user3@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user4@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user5@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user6@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user7@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user8@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user9@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user10@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user11@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user12@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user13@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user14@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user15@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user16@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user17@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user18@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user19@endava.com\",\n\t\t\t\"position\" : \"Senior Developer\"\n\t\t}\n\t\t]\n}",
+    "isBase64Encoded": false
+  },
+  "missingProjectNameResponse":{
+  "body": "Missing project name!",
+  "headers": {
+    "Access-Control-Allow-Credentials": true,
+    "Access-Control-Allow-Origin": "*",
+    "Cache-Control": "no-store",
+    "Content-Type": "application/json"
+  },
+  "statusCode": 400
+},
+  "missingProjectNumber": {
+    "resource": "/project",
+    "path": "/project",
+    "httpMethod": "POST",
+    "headers": {
+      "Accept": "*/*",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Cache-Control": "no-cache",
+      "CloudFront-Forwarded-Proto": "https",
+      "CloudFront-Is-Desktop-Viewer": "true",
+      "CloudFront-Is-Mobile-Viewer": "false",
+      "CloudFront-Is-SmartTV-Viewer": "false",
+      "CloudFront-Is-Tablet-Viewer": "false",
+      "CloudFront-Viewer-Country": "RS",
+      "Content-Type": "application/json",
+      "Host": "6o1str51jg.execute-api.us-east-2.amazonaws.com",
+      "Postman-Token": "2b08f42f-a629-4d57-b960-9b88adee065a",
+      "User-Agent": "PostmanRuntime/7.25.0",
+      "Via": "1.1 93f2a781416975f99355acc4c81d60d2.cloudfront.net (CloudFront)",
+      "X-Amz-Cf-Id": "8KKbLIoaYCW6Owby2cgBtnzZcXbi4Jzljrr6pdIt44uEDmVDrgYZ0g==",
+      "X-Amzn-Trace-Id": "Root=1-5ed4d854-a76ff1b0d092842023e05dc0",
+      "X-Forwarded-For": "87.116.177.49, 130.176.13.96",
+      "X-Forwarded-Port": "443",
+      "X-Forwarded-Proto": "https"
+    },
+    "multiValueHeaders": {
+      "Accept": [
+        "*/*"
+      ],
+      "Accept-Encoding": [
+        "gzip, deflate, br"
+      ],
+      "Cache-Control": [
+        "no-cache"
+      ],
+      "CloudFront-Forwarded-Proto": [
+        "https"
+      ],
+      "CloudFront-Is-Desktop-Viewer": [
+        "true"
+      ],
+      "CloudFront-Is-Mobile-Viewer": [
+        "false"
+      ],
+      "CloudFront-Is-SmartTV-Viewer": [
+        "false"
+      ],
+      "CloudFront-Is-Tablet-Viewer": [
+        "false"
+      ],
+      "CloudFront-Viewer-Country": [
+        "RS"
+      ],
+      "Content-Type": [
+        "application/json"
+      ],
+      "Host": [
+        "6o1str51jg.execute-api.us-east-2.amazonaws.com"
+      ],
+      "Postman-Token": [
+        "2b08f42f-a629-4d57-b960-9b88adee065a"
+      ],
+      "User-Agent": [
+        "PostmanRuntime/7.25.0"
+      ],
+      "Via": [
+        "1.1 93f2a781416975f99355acc4c81d60d2.cloudfront.net (CloudFront)"
+      ],
+      "X-Amz-Cf-Id": [
+        "8KKbLIoaYCW6Owby2cgBtnzZcXbi4Jzljrr6pdIt44uEDmVDrgYZ0g=="
+      ],
+      "X-Amzn-Trace-Id": [
+        "Root=1-5ed4d854-a76ff1b0d092842023e05dc0"
+      ],
+      "X-Forwarded-For": [
+        "87.116.177.49, 130.176.13.96"
+      ],
+      "X-Forwarded-Port": [
+        "443"
+      ],
+      "X-Forwarded-Proto": [
+        "https"
+      ]
+    },
+    "queryStringParameters": null,
+    "multiValueQueryStringParameters": null,
+    "pathParameters": null,
+    "stageVariables": null,
+    "requestContext": {
+      "resourceId": "oilg74",
+      "resourcePath": "/project",
+      "httpMethod": "POST",
+      "extendedRequestId": "Nca9RGFpiYcFmWQ=",
+      "requestTime": "01/Jun/2020:10:28:36 +0000",
+      "path": "/dev/project",
+      "accountId": "604754371110",
+      "protocol": "HTTP/1.1",
+      "stage": "dev",
+      "domainPrefix": "6o1str51jg",
+      "requestTimeEpoch": 1591007316857,
+      "requestId": "5db22063-b55e-46a0-8029-e7335c928aab",
+      "identity": {
+        "cognitoIdentityPoolId": null,
+        "accountId": null,
+        "cognitoIdentityId": null,
+        "caller": null,
+        "sourceIp": "87.116.177.49",
+        "principalOrgId": null,
+        "accessKey": null,
+        "cognitoAuthenticationType": null,
+        "cognitoAuthenticationProvider": null,
+        "userArn": null,
+        "userAgent": "PostmanRuntime/7.25.0",
+        "user": null
+      },
+      "domainName": "6o1str51jg.execute-api.us-east-2.amazonaws.com",
+      "apiId": "6o1str51jg"
+    },
+    "body": "{\n\t\"projectName\": \"Project\",\n\t\"clientName\": \"twoTables\",\n\t\"teamMembers\" : [\n\t\t{\n\t\t\t\"email\": \"filip.milanko@endava.com\",\n\t\t\t\"position\": \"Senior Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"dragantosic@endava.com\",\n\t\t\t\"position\": \"Project Manager\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"vlada.sivacki@endava.com\",\n\t\t\t\"position\": \"Head Of Development\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"tijana.andric@endava.com\",\n\t\t\t\"position\" : \"UX Design\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"Nevena@endava.com\",\n\t\t\t\"position\": \"Human Resources\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"anjaradenkovic@endava.com\",\n\t\t\t\"position\": \"Junior QA\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"newUser@endava.com\",\n\t\t\t\"position\": \"Senior Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"jovanatodorov@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user1@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user2@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user3@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user4@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user5@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user6@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user7@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user8@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user9@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user10@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user11@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user12@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user13@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user14@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user15@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user16@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user17@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user18@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user19@endava.com\",\n\t\t\t\"position\" : \"Senior Developer\"\n\t\t}\n\t\t]\n}",
+    "isBase64Encoded": false
+  },
+  "missingProjectNumberResponse": {
+    "body": "Missing project number!",
+    "headers": {
+      "Access-Control-Allow-Credentials": true,
+      "Access-Control-Allow-Origin": "*",
+      "Cache-Control": "no-store",
+      "Content-Type": "application/json"
+    },
+    "statusCode": 400
+  },
+  "missingClientName": {
+    "resource": "/project",
+    "path": "/project",
+    "httpMethod": "POST",
+    "headers": {
+      "Accept": "*/*",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Cache-Control": "no-cache",
+      "CloudFront-Forwarded-Proto": "https",
+      "CloudFront-Is-Desktop-Viewer": "true",
+      "CloudFront-Is-Mobile-Viewer": "false",
+      "CloudFront-Is-SmartTV-Viewer": "false",
+      "CloudFront-Is-Tablet-Viewer": "false",
+      "CloudFront-Viewer-Country": "RS",
+      "Content-Type": "application/json",
+      "Host": "6o1str51jg.execute-api.us-east-2.amazonaws.com",
+      "Postman-Token": "2b08f42f-a629-4d57-b960-9b88adee065a",
+      "User-Agent": "PostmanRuntime/7.25.0",
+      "Via": "1.1 93f2a781416975f99355acc4c81d60d2.cloudfront.net (CloudFront)",
+      "X-Amz-Cf-Id": "8KKbLIoaYCW6Owby2cgBtnzZcXbi4Jzljrr6pdIt44uEDmVDrgYZ0g==",
+      "X-Amzn-Trace-Id": "Root=1-5ed4d854-a76ff1b0d092842023e05dc0",
+      "X-Forwarded-For": "87.116.177.49, 130.176.13.96",
+      "X-Forwarded-Port": "443",
+      "X-Forwarded-Proto": "https"
+    },
+    "multiValueHeaders": {
+      "Accept": [
+        "*/*"
+      ],
+      "Accept-Encoding": [
+        "gzip, deflate, br"
+      ],
+      "Cache-Control": [
+        "no-cache"
+      ],
+      "CloudFront-Forwarded-Proto": [
+        "https"
+      ],
+      "CloudFront-Is-Desktop-Viewer": [
+        "true"
+      ],
+      "CloudFront-Is-Mobile-Viewer": [
+        "false"
+      ],
+      "CloudFront-Is-SmartTV-Viewer": [
+        "false"
+      ],
+      "CloudFront-Is-Tablet-Viewer": [
+        "false"
+      ],
+      "CloudFront-Viewer-Country": [
+        "RS"
+      ],
+      "Content-Type": [
+        "application/json"
+      ],
+      "Host": [
+        "6o1str51jg.execute-api.us-east-2.amazonaws.com"
+      ],
+      "Postman-Token": [
+        "2b08f42f-a629-4d57-b960-9b88adee065a"
+      ],
+      "User-Agent": [
+        "PostmanRuntime/7.25.0"
+      ],
+      "Via": [
+        "1.1 93f2a781416975f99355acc4c81d60d2.cloudfront.net (CloudFront)"
+      ],
+      "X-Amz-Cf-Id": [
+        "8KKbLIoaYCW6Owby2cgBtnzZcXbi4Jzljrr6pdIt44uEDmVDrgYZ0g=="
+      ],
+      "X-Amzn-Trace-Id": [
+        "Root=1-5ed4d854-a76ff1b0d092842023e05dc0"
+      ],
+      "X-Forwarded-For": [
+        "87.116.177.49, 130.176.13.96"
+      ],
+      "X-Forwarded-Port": [
+        "443"
+      ],
+      "X-Forwarded-Proto": [
+        "https"
+      ]
+    },
+    "queryStringParameters": null,
+    "multiValueQueryStringParameters": null,
+    "pathParameters": null,
+    "stageVariables": null,
+    "requestContext": {
+      "resourceId": "oilg74",
+      "resourcePath": "/project",
+      "httpMethod": "POST",
+      "extendedRequestId": "Nca9RGFpiYcFmWQ=",
+      "requestTime": "01/Jun/2020:10:28:36 +0000",
+      "path": "/dev/project",
+      "accountId": "604754371110",
+      "protocol": "HTTP/1.1",
+      "stage": "dev",
+      "domainPrefix": "6o1str51jg",
+      "requestTimeEpoch": 1591007316857,
+      "requestId": "5db22063-b55e-46a0-8029-e7335c928aab",
+      "identity": {
+        "cognitoIdentityPoolId": null,
+        "accountId": null,
+        "cognitoIdentityId": null,
+        "caller": null,
+        "sourceIp": "87.116.177.49",
+        "principalOrgId": null,
+        "accessKey": null,
+        "cognitoAuthenticationType": null,
+        "cognitoAuthenticationProvider": null,
+        "userArn": null,
+        "userAgent": "PostmanRuntime/7.25.0",
+        "user": null
+      },
+      "domainName": "6o1str51jg.execute-api.us-east-2.amazonaws.com",
+      "apiId": "6o1str51jg"
+    },
+    "body": "{\n\t\"projectName\": \"Project\",\n\t\"projectNumber\": 15,\n\t\"teamMembers\" : [\n\t\t{\n\t\t\t\"email\": \"filip.milanko@endava.com\",\n\t\t\t\"position\": \"Senior Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"dragantosic@endava.com\",\n\t\t\t\"position\": \"Project Manager\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"vlada.sivacki@endava.com\",\n\t\t\t\"position\": \"Head Of Development\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"tijana.andric@endava.com\",\n\t\t\t\"position\" : \"UX Design\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"Nevena@endava.com\",\n\t\t\t\"position\": \"Human Resources\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"anjaradenkovic@endava.com\",\n\t\t\t\"position\": \"Junior QA\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"newUser@endava.com\",\n\t\t\t\"position\": \"Senior Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"jovanatodorov@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user1@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user2@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user3@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user4@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user5@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user6@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user7@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user8@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user9@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user10@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user11@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user12@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user13@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user14@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user15@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user16@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user17@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user18@endava.com\",\n\t\t\t\"position\" : \"Intermediate Developer\"\n\t\t},\n\t\t{\n\t\t\t\"email\" : \"user19@endava.com\",\n\t\t\t\"position\" : \"Senior Developer\"\n\t\t}\n\t\t]\n}",
+    "isBase64Encoded": false
+  },
+  "missingClientNameResponse": {
+    "body": "Missing client name!",
+    "headers": {
+      "Access-Control-Allow-Credentials": true,
+      "Access-Control-Allow-Origin": "*",
+      "Cache-Control": "no-store",
+      "Content-Type": "application/json"
+    },
+    "statusCode": 400
+  },
+  "missingTeamMembers": {
+    "resource": "/project",
+    "path": "/project",
+    "httpMethod": "POST",
+    "headers": {
+      "Accept": "*/*",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Cache-Control": "no-cache",
+      "CloudFront-Forwarded-Proto": "https",
+      "CloudFront-Is-Desktop-Viewer": "true",
+      "CloudFront-Is-Mobile-Viewer": "false",
+      "CloudFront-Is-SmartTV-Viewer": "false",
+      "CloudFront-Is-Tablet-Viewer": "false",
+      "CloudFront-Viewer-Country": "RS",
+      "Content-Type": "application/json",
+      "Host": "6o1str51jg.execute-api.us-east-2.amazonaws.com",
+      "Postman-Token": "2b08f42f-a629-4d57-b960-9b88adee065a",
+      "User-Agent": "PostmanRuntime/7.25.0",
+      "Via": "1.1 93f2a781416975f99355acc4c81d60d2.cloudfront.net (CloudFront)",
+      "X-Amz-Cf-Id": "8KKbLIoaYCW6Owby2cgBtnzZcXbi4Jzljrr6pdIt44uEDmVDrgYZ0g==",
+      "X-Amzn-Trace-Id": "Root=1-5ed4d854-a76ff1b0d092842023e05dc0",
+      "X-Forwarded-For": "87.116.177.49, 130.176.13.96",
+      "X-Forwarded-Port": "443",
+      "X-Forwarded-Proto": "https"
+    },
+    "multiValueHeaders": {
+      "Accept": [
+        "*/*"
+      ],
+      "Accept-Encoding": [
+        "gzip, deflate, br"
+      ],
+      "Cache-Control": [
+        "no-cache"
+      ],
+      "CloudFront-Forwarded-Proto": [
+        "https"
+      ],
+      "CloudFront-Is-Desktop-Viewer": [
+        "true"
+      ],
+      "CloudFront-Is-Mobile-Viewer": [
+        "false"
+      ],
+      "CloudFront-Is-SmartTV-Viewer": [
+        "false"
+      ],
+      "CloudFront-Is-Tablet-Viewer": [
+        "false"
+      ],
+      "CloudFront-Viewer-Country": [
+        "RS"
+      ],
+      "Content-Type": [
+        "application/json"
+      ],
+      "Host": [
+        "6o1str51jg.execute-api.us-east-2.amazonaws.com"
+      ],
+      "Postman-Token": [
+        "2b08f42f-a629-4d57-b960-9b88adee065a"
+      ],
+      "User-Agent": [
+        "PostmanRuntime/7.25.0"
+      ],
+      "Via": [
+        "1.1 93f2a781416975f99355acc4c81d60d2.cloudfront.net (CloudFront)"
+      ],
+      "X-Amz-Cf-Id": [
+        "8KKbLIoaYCW6Owby2cgBtnzZcXbi4Jzljrr6pdIt44uEDmVDrgYZ0g=="
+      ],
+      "X-Amzn-Trace-Id": [
+        "Root=1-5ed4d854-a76ff1b0d092842023e05dc0"
+      ],
+      "X-Forwarded-For": [
+        "87.116.177.49, 130.176.13.96"
+      ],
+      "X-Forwarded-Port": [
+        "443"
+      ],
+      "X-Forwarded-Proto": [
+        "https"
+      ]
+    },
+    "queryStringParameters": null,
+    "multiValueQueryStringParameters": null,
+    "pathParameters": null,
+    "stageVariables": null,
+    "requestContext": {
+      "resourceId": "oilg74",
+      "resourcePath": "/project",
+      "httpMethod": "POST",
+      "extendedRequestId": "Nca9RGFpiYcFmWQ=",
+      "requestTime": "01/Jun/2020:10:28:36 +0000",
+      "path": "/dev/project",
+      "accountId": "604754371110",
+      "protocol": "HTTP/1.1",
+      "stage": "dev",
+      "domainPrefix": "6o1str51jg",
+      "requestTimeEpoch": 1591007316857,
+      "requestId": "5db22063-b55e-46a0-8029-e7335c928aab",
+      "identity": {
+        "cognitoIdentityPoolId": null,
+        "accountId": null,
+        "cognitoIdentityId": null,
+        "caller": null,
+        "sourceIp": "87.116.177.49",
+        "principalOrgId": null,
+        "accessKey": null,
+        "cognitoAuthenticationType": null,
+        "cognitoAuthenticationProvider": null,
+        "userArn": null,
+        "userAgent": "PostmanRuntime/7.25.0",
+        "user": null
+      },
+      "domainName": "6o1str51jg.execute-api.us-east-2.amazonaws.com",
+      "apiId": "6o1str51jg"
+    },
+    "body": "{\n\t\"projectName\": \"Project\",\n\t\"projectNumber\": 15,\n\t\"clientName\": \"twoTables\"]\n}",
+    "isBase64Encoded": false
+  },
+  "missingTeamMembersResponse": {
+    "body": "Invalid body!",
+    "headers": {
+      "Access-Control-Allow-Credentials": true,
+      "Access-Control-Allow-Origin": "*",
+      "Cache-Control": "no-store",
+      "Content-Type": "application/json"
+    },
+    "statusCode": 400
+  }
+}

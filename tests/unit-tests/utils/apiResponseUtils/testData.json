@@ -1,0 +1,48 @@
+{
+  "error": "This is an error message.",
+  "errorResponseWithErrorMessage": {
+    "statusCode":  400,
+    "headers": {
+      "Access-Control-Allow-Origin" : "*",
+      "Access-Control-Allow-Credentials" : true,
+      "Content-Type" : "application/json",
+      "Cache-Control": "no-store"
+    },
+    "body": "This is an error message."
+  },
+  "errorResponseWitNoErrorMessage": {
+    "statusCode":  400,
+    "headers": {
+      "Access-Control-Allow-Origin" : "*",
+      "Access-Control-Allow-Credentials" : true,
+      "Content-Type" : "application/json",
+      "Cache-Control": "no-store"
+    }
+  },
+  "errorInvalidStatusCode": "Failed to create response. Status code must be a number!",
+  "errorMissingStatusCode": "Failed to create response. Missing status code.",
+  "someString" : "This is a message",
+  "normalResponseString" : {
+    "statusCode":  200,
+    "headers": {
+      "Access-Control-Allow-Origin" : "*",
+      "Access-Control-Allow-Credentials" : true,
+      "Content-Type" : "application/json",
+      "Cache-Control": "no-store"
+    },
+    "body": "This is a message"
+  },
+  "jsonBody" : {
+    "message" : "This is a message."
+  },
+  "jsonBodyResponse" : {
+    "statusCode": 200,
+    "headers": {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Credentials": true,
+      "Content-Type": "application/json",
+      "Cache-Control": "no-store"
+    },
+    "body": "{\"message\":\"This is a message.\"}"
+  }
+}

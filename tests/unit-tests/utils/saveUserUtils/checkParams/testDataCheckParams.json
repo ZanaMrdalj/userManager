@@ -1,0 +1,85 @@
+{
+  "validParams" : {
+      "userName": "user",
+      "email": "username@email.com",
+      "workingAs": "Senior Developer",
+      "base64image": "data:image/jpeg;base64stringOfCharacters"
+  },
+  "invalidParamsWithUserNameAsNumber" : {
+      "userName": 200,
+      "email": "user@email.com",
+      "workingAs" : "Senior Developer",
+      "base64image": "data:image/jpeg;base64stringOfCharacters"
+  },
+  "invalidParamsWithUserNameAsNumberResponse" : "UserName must be a string.",
+  "userNameInvalidLength" : {
+      "userName": "use",
+      "email": "user@email.com",
+      "workingAs": "Senior Developer",
+      "base64image": "data:image/jpeg;base64,stringOfCharacters"
+  },
+  "userNameInvalidLength2" : {
+      "userName": "userNameUserNameUserNameUserNameUser",
+      "email": "user@email.com",
+      "workingAs": "Senior Developer",
+      "base64image": "data:image/jpeg;base64,stringOfCharacters"
+  },
+  "UserNameInvalidLengthResponse" : "UserName must have at least 4 characters.",
+  "UserNameInvalidLengthResponse2" : "UserName must have less than 25 characters.",
+  "invalidEmail" : {
+      "userName": "user",
+      "email": "user@emailcom",
+      "workingAs": "Senior Developer",
+      "base64image": "data:image/jpeg;base64,stringOfCharacters"
+  },
+  "invalidEmailResponse" : "Email must be a valid email address.",
+  "invalidParamsWorkingAs" : {
+      "userName": "user",
+      "email": "user@email.com",
+      "workingAs": "position",
+      "base64image": "data:image/jpeg;base64,stringOfCharacters"
+  },
+  "invalidParamsWorkingAsResponse" : "Working position not valid.",
+  "missingUserName" : {
+      "userame": "user",
+      "email": "user@email.com",
+      "workingAs": "Senior Developer",
+      "base64image": "data:image/jpeg;base64,stringOfCharacters"
+  },
+  "missingUserNameResponse": "Missing valid userName field in body.",
+  "missingEmail" : {
+      "userName": "user",
+      "emaill": "user@email.com",
+      "workingAs": "Senior Developer",
+      "base64image": "data:image/jpeg;base64,stringOfCharacters"
+  },
+  "missingEmailResponse": "Missing valid email field in body.",
+  "missingWorkingAs" : {
+      "userName": "user",
+      "email": "user@email.com",
+      "workingPosition": "position",
+      "base64image": "data:image/jpeg;base64,stringOfCharacters"
+  },
+  "missingWorkingAsResponse": "Missing valid workingAs field in body.",
+  "missingBase64image": {
+      "userName": "user",
+      "email": "user@email.com",
+      "workingAs": "Senior Developer",
+      "baseimage": "data:image/jpeg,base64,stringOfCharacters"
+  },
+  "missingBase64imageResponse": "Missing valid base64image field in body.",
+  "invalidBase64image": {
+      "userName": "user",
+      "email": "user@email.com",
+      "workingAs": "Senior Developer",
+      "base64image": "base64,stringOfCharacters"
+  },
+  "invalidBase64imageResponse": "Invalid base64 code.",
+  "invalidBase64imageType": {
+      "userName": "user",
+      "email": "user@email.com",
+      "workingAs": "Senior Developer",
+      "base64image": true
+  },
+  "invalidBase64imageTypeResponse": "Base64image must be a string."
+}

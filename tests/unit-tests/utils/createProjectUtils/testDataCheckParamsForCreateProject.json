@@ -1,0 +1,119 @@
+{
+  "validParams": {
+    "projectNumber": 12345,
+    "projectName": "testProject",
+    "clientName": "testClient",
+    "teamMembers": [
+      { "email": "zanamrdalj@endava.com", "position": "Intern" },
+      { "email": "filip.milanko@endava.com", "position": "Senior Developer" }
+    ]
+  },
+  "missingProjectName": {
+      "projectNumber": 12345,
+      "clientName": "testClient",
+      "teamMembers": [
+        { "email": "zanamrdalj@endava.com", "position": "Intern" },
+        { "email": "filip.milanko@endava.com", "position": "Senior Developer" }
+      ]
+  },
+  "missingProjectNameResponse": "Missing project name!",
+  "missingProjectNumber": {
+      "projectName": "testName",
+      "clientName": "testClient",
+      "teamMembers": [
+        { "email": "zanamrdalj@endava.com", "position": "Intern" },
+        { "email": "filip.milanko@endava.com", "position": "Senior Developer" }
+      ]
+  },
+  "missingProjectNumberResponse": "Missing project number!",
+  "missingClientName": {
+      "projectNumber": 12345,
+      "projectName": "testProject",
+      "teamMembers": [
+        { "email": "zanamrdalj@endava.com", "position": "Intern" },
+        { "email": "filip.milanko@endava.com", "position": "Senior Developer" }
+      ]
+  },
+  "missingClientNameResponse": "Missing client name!",
+  "missingTeamMembers": {
+      "projectNumber": 12345,
+      "projectName": "testProject",
+      "clientName": "testClient"
+  },
+  "missingTeamMembersResponse": "Missing list of team members!",
+  "invalidProjectName": {
+      "projectNumber": 12345,
+      "projectName": 1234,
+      "clientName": "testClient",
+      "teamMembers": [
+        { "email": "zanamrdalj@endava.com", "position": "Intern" },
+        { "email": "filip.milanko@endava.com", "position": "Senior Developer" }
+      ]
+  },
+  "invalidProjectNameResponse": "Project name must be a string!",
+  "invalidClientName": {
+      "projectNumber": 12345,
+      "projectName": "testProject",
+      "clientName": 1111,
+      "teamMembers": [
+        { "email": "zanamrdalj@endava.com", "position": "Intern" },
+        { "email": "filip.milanko@endava.com", "position": "Senior Developer" }
+      ]
+  },
+  "invalidClientNameResponse": "Client name must be a string!",
+  "invalidProjectNumber": {
+      "projectNumber": "testNumber",
+      "projectName": "testProject",
+      "clientName": "testClient",
+      "teamMembers": [
+        { "email": "zanamrdalj@endava.com", "position": "Intern" },
+        { "email": "filip.milanko@endava.com", "position": "Senior Developer" }
+      ]
+  },
+  "invalidProjectNumberResponse": "Project number must be a number!",
+  "invalidTeamMembers": {
+    "projectNumber": 1234,
+    "projectName": "testProject",
+    "clientName": "testClient",
+    "teamMembers": 123
+},
+  "invalidTeamMembersResponse": "Team members must be a list of objects!",
+  "emptyTeamMembers": {
+      "projectName": "testProject",
+      "projectNumber": 12345,
+      "clientName": "testClient",
+      "teamMembers": [
+      ]
+  },
+  "emptyTeamMembersResponse": "There must be at least one team member.",
+  "noEmailInTeamMembers": {
+      "projectName": "testProject",
+      "projectNumber": 12345,
+      "clientName": "testClient",
+      "teamMembers": [
+        { "em": "zanamrdalj@endava.com", "position": "Intern"},
+        { "email": "filip.milanko.com", "position": "Senior Developer"}
+      ]
+  },
+  "noEmailInTeamMembersResponse": "Team member must have email to be identified!",
+  "noPositionInTeamMembers": {
+      "projectName": "testProject",
+      "projectNumber": 12345,
+      "clientName": "testClient",
+      "teamMembers": [
+        { "email": "zanamrdalj@endava.com", "position": "Intern"},
+        { "email": "filip.milanko.com", "pozicija": "Senior Developer"}
+      ]
+  },
+  "noPositionInTeamMembersResponse": "Team member must have position data!",
+  "invalidPositionInTeamMembers": {
+      "projectName": "testProject",
+      "projectNumber": 12345,
+      "clientName": "testClient",
+      "teamMembers": [
+        { "email": "zanamrdalj@endava.com", "position": "In"},
+        { "email": "filip.milanko.com", "position": "Project Leader"}
+      ]
+  },
+  "invalidPositionInTeamMembersResponse": "Team member position is not valid."
+}

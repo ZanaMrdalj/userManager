@@ -1,0 +1,26 @@
+{
+  "validParams" : {
+    "Bucket":"avatarBucket",
+    "Key":"testUser.png",
+    "Body":{
+      "type":"Buffer",
+      "data":[137,80,78,34,0,136,34,0,136,228,36,255,234,140,255,41,177,78,234,65,76,91,209,203,232,163,31,31,219,245,28,203,78,209,225,138,12,121,116,231,28,87,174,110,48,48,5,111,153,191,131,219,199,14],
+      "ContentEncoding":"base64",
+      "ContentType":"image/png"
+    }
+  },
+  "validResponse": {
+    "Location": "https://endavans-dev-avatar-bucket.s3.us-east-2.amazonaws.com/testUser.png"
+  },
+  "invalidParams" : {
+    "Bucket":"avatarBucket",
+    "Key":"testUser.png",
+    "Body":{
+      "type":"Buffer",
+      "data":[137,80,78,34,0,136,34,0,136,228,36,255,234,140,255,41,177,78,234,65,76,91,209,203,232,163,31,31,219,245,28,203,78,209,225,138,12,121,116,231,28,87,174,110,48,48,5,111,153,191,131,219,199,14],
+      "ContentEncoding":"base64",
+      "ContentType":"image/png"
+    }
+  },
+  "invalidParamsResponse": "Failed to save user data."
+}

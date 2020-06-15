@@ -1,0 +1,181 @@
+[
+  {
+    "userName": "Filip Milanko",
+    "workingAs": "Senior Developer",
+    "email": "filip.milanko@endava.com",
+    "avatarLink": "https://endavans-dev-avatar-bucket.s3.us-east-2.amazonaws.com/FilipMilanko.png"
+  },
+  {
+    "userName": "Zana Mrdalj",
+    "workingAs": "Intern",
+    "email": "zana.mrdalj@endava.com",
+    "avatarLink": "https://endavans-dev-avatar-bucket.s3.us-east-2.amazonaws.com/smajli.png"
+  },
+  {
+    "userName": "Nevena",
+    "workingAs": "Human Resources",
+    "email": "Nevena@endava.com",
+    "avatarLink": "https://endavans-dev-avatar-bucket.s3.us-east-2.amazonaws.com/smajli.png"
+  },
+  {
+    "userName": "Anja Radenkovic",
+    "workingAs": "Junior QA",
+    "email": "anjaradenkovic@endava.com",
+    "avatarLink": "https://endavans-dev-avatar-bucket.s3.us-east-2.amazonaws.com/smajli.png"
+  },
+  {
+    "userName": "Dragan Tosic",
+    "workingAs": "Project Manager",
+    "email": "dragantosic@endava.com",
+    "avatarLink": "https://endavans-dev-avatar-bucket.s3.us-east-2.amazonaws.com/smajli.png"
+  },
+  {
+    "userName": "Jovana Todorov",
+    "workingAs": "Intermediate Developer",
+    "email": "jovanatodorov@endava.com",
+    "avatarLink": "https://endavans-dev-avatar-bucket.s3.us-east-2.amazonaws.com/smajli.png"
+  },
+  {
+    "userName": "New User",
+    "workingAs": "Senior Developer",
+    "email": "newUser@endava.com",
+    "avatarLink": "https://endavans-dev-avatar-bucket.s3.us-east-2.amazonaws.com/smajli.png"
+  },
+  {
+    "userName": "user10",
+    "workingAs": "Intermediate Developer",
+    "email": "user10@endava.com",
+    "avatarLink": "https://endavans-dev-avatar-bucket.s3.us-east-2.amazonaws.com/smajli.png"
+  },
+  {
+    "userName": "Tijana Andric",
+    "workingAs": "UX Design",
+    "email": "tijana.andric@endava.com",
+    "avatarLink": "https://endavans-dev-avatar-bucket.s3.us-east-2.amazonaws.com/smajli.png"
+  },
+  {
+    "userName": "user11",
+    "workingAs": "Intermediate Developer",
+    "email": "user11@endava.com",
+    "avatarLink": "https://endavans-dev-avatar-bucket.s3.us-east-2.amazonaws.com/smajli.png"
+  },
+  {
+    "userName": "user12",
+    "workingAs": "Intermediate Developer",
+    "email": "user12@endava.com",
+    "avatarLink": "https://endavans-dev-avatar-bucket.s3.us-east-2.amazonaws.com/smajli.png"
+  },
+  {
+    "userName": "user13",
+    "workingAs": "Intermediate Developer",
+    "email": "user13@endava.com",
+    "avatarLink": "https://endavans-dev-avatar-bucket.s3.us-east-2.amazonaws.com/smajli.png"
+  },
+  {
+    "userName": "user14",
+    "workingAs": "Intermediate Developer",
+    "email": "user14@endava.com",
+    "avatarLink": "https://endavans-dev-avatar-bucket.s3.us-east-2.amazonaws.com/smajli.png"
+  },
+  {
+    "userName": "user15",
+    "workingAs": "Intermediate Developer",
+    "email": "user15@endava.com",
+    "avatarLink": "https://endavans-dev-avatar-bucket.s3.us-east-2.amazonaws.com/smajli.png"
+  },
+  {
+    "userName": "user16",
+    "workingAs": "Intermediate Developer",
+    "email": "user16@endava.com",
+    "avatarLink": "https://endavans-dev-avatar-bucket.s3.us-east-2.amazonaws.com/smajli.png"
+  },
+  {
+    "userName": "user17",
+    "workingAs": "Intermediate Developer",
+    "email": "user17@endava.com",
+    "avatarLink": "https://endavans-dev-avatar-bucket.s3.us-east-2.amazonaws.com/smajli.png"
+  },
+  {
+    "userName": "user18",
+    "workingAs": "Intermediate Developer",
+    "email": "user18@endava.com",
+    "avatarLink": "https://endavans-dev-avatar-bucket.s3.us-east-2.amazonaws.com/smajli.png"
+  },
+  {
+    "userName": "user19",
+    "workingAs": "Intermediate Developer",
+    "email": "user19@endava.com",
+    "avatarLink": "https://endavans-dev-avatar-bucket.s3.us-east-2.amazonaws.com/smajli.png"
+  },
+  {
+    "userName": "user1",
+    "workingAs": "Intermediate Developer",
+    "email": "user1@endava.com",
+    "avatarLink": "https://endavans-dev-avatar-bucket.s3.us-east-2.amazonaws.com/smajli.png"
+  },
+  {
+    "userName": "user2",
+    "workingAs": "Intermediate Developer",
+    "email": "user2@endava.com",
+    "avatarLink": "https://endavans-dev-avatar-bucket.s3.us-east-2.amazonaws.com/smajli.png"
+  },
+  {
+    "userName": "user3",
+    "workingAs": "Intermediate Developer",
+    "email": "user3@endava.com",
+    "avatarLink": "https://endavans-dev-avatar-bucket.s3.us-east-2.amazonaws.com/smajli.png"
+  },
+  {
+    "userName": "user4",
+    "workingAs": "Intermediate Developer",
+    "email": "user4@endava.com",
+    "avatarLink": "https://endavans-dev-avatar-bucket.s3.us-east-2.amazonaws.com/smajli.png"
+  },
+  {
+    "userName": "user5",
+    "workingAs": "Intermediate Developer",
+    "email": "user5@endava.com",
+    "avatarLink": "https://endavans-dev-avatar-bucket.s3.us-east-2.amazonaws.com/smajli.png"
+  },
+  {
+    "userName": "user6",
+    "workingAs": "Intermediate Developer",
+    "email": "user6@endava.com",
+    "avatarLink": "https://endavans-dev-avatar-bucket.s3.us-east-2.amazonaws.com/smajli.png"
+  },
+  {
+    "userName": "user7",
+    "workingAs": "Intermediate Developer",
+    "email": "user7@endava.com",
+    "avatarLink": "https://endavans-dev-avatar-bucket.s3.us-east-2.amazonaws.com/smajli.png"
+  },
+  {
+    "userName": "user8",
+    "workingAs": "Intermediate Developer",
+    "email": "user8@endava.com",
+    "avatarLink": "https://endavans-dev-avatar-bucket.s3.us-east-2.amazonaws.com/smajli.png"
+  },
+  {
+    "userName": "user9",
+    "workingAs": "Intermediate Developer",
+    "email": "user9@endava.com",
+    "avatarLink": "https://endavans-dev-avatar-bucket.s3.us-east-2.amazonaws.com/smajli.png"
+  },
+  {
+    "userName": "Vladimir Sivacki",
+    "workingAs": "Head Of Development",
+    "email": "vlada.sivacki@endava.com",
+    "avatarLink": "https://endavans-dev-avatar-bucket.s3.us-east-2.amazonaws.com/smajli.png"
+  },
+  {
+    "userName": "testUser",
+    "workingAs": "Intern",
+    "email": "test.user@endava.com"
+  },
+  {
+    "userName": "test user2",
+    "workingAs": "Intern",
+    "email": "test.user2@endava.com",
+    "projectNumber": 3
+  }
+]
