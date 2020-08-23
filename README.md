@@ -1,4 +1,4 @@
-﻿﻿#Endavans
+﻿﻿#UserManager
 
 This is a small practice project to manipulate user and project data to DynamoDB or retrieve existing data, using AWS Lambda, DynamoDB, S3, SES, CloudFormation and serverless framework.
 
